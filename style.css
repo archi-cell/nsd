@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #3498DB;
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+}
+
+/* Styling for the institute image */
+.institute-image {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.institute-image h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.institute-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Styling for the student note section */
+.student-note {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-note h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.student-note p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Styling for the welcome section */
+.welcome-section {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Other existing styles remain the same */
+/* Styling for the welcome section */
+.welcome-section {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-logo {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .welcome-logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-logo h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Other existing styles remain the same */
+/* Styling for the About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .about-content {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between; /* Space between image and text */
+    gap: 20px;
+  }
+  
+  .about-image {
+    width: 50%; /* Make the image container take up half of the section */
+  }
+  
+  .about-image img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px; /* Limit text width to ensure it doesn't stretch too wide */
+  }
+  
+  /* Make images responsive for smaller screens */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Stack image and text vertically on small screens */
+      text-align: center; /* Center align text for better presentation */
+    }
+  
+    .about-image {
+      width: 80%; /* Adjust image size on small screens */
+      margin-bottom: 20px; /* Add some space below the image */
+    }
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+/* Styling for the Courses Section */
+.courses {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .courses h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid layout for responsive courses */
+    gap: 20px;
+  }
+  
+  .course-item {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-item h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .course-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Make it responsive for smaller screens */
+  @media (max-width: 768px) {
+    .course-item {
+      padding: 15px;
+    }
+  
+    .course-item h2 {
+      font-size: 1.6rem;
+    }
+  
+    .course-item p {
+      font-size: 1rem;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+
+  /* Styling for the Certificate Section */
+.certificate {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .certificate h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .certificate p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .certificate-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .certificate-img img {
+    max-width: 80%;  /* Adjust this to set the maximum width of the image */
+    height: auto;  /* Keep the aspect ratio of the image */
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Make it responsive for smaller screens */
+  @media (max-width: 768px) {
+    .certificate h1 {
+      font-size: 2rem;
+    }
+  
+    .certificate p {
+      font-size: 1rem;
+    }
+  
+    .certificate-img img {
+      max-width: 90%;  /* Image size adjusts on smaller screens */
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+/* Styling for WhatsApp button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128C7E;
+  }
+    
