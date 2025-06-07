@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Institute Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NSD Computer Institute</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Welcome Section with Logo and Heading -->
-  <section class="welcome-section">
-    <div class="welcome-logo">
-      <img src="logo.png" alt="Institute Logo">
-      <h1>NSD Computer Institute</h1>
+  <!-- Header and Logo -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="logo.png" alt="NSD Logo" />
+        <h1>NSD Computer Institute</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="certificate.html">Certificate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <p>Increase Your Computer Skills with our Institute</p>
-    <p>Registered under MSME, Govt. of India (UDYAM-PB-20-0014412)</p>
-    <p>Also registered an ISO 9001 (INQ/PUN-7300/0821)</p>
-  </section>
-
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="certificate.html">Certificate</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <section class="hero">
-    <h1>Welcome</h1>
-    <p>We provide top-notch training in various computer technologies.</p>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h2>Welcome to NSD Institute</h2>
+      <p>Boost your computer skills with our industry-standard training programs.</p>
+      <div class="certifications">
+        <p><strong>Registered under MSME</strong> (UDYAM-PB-20-0014412)</p>
+        <p><strong>ISO 9001 Certified</strong> (INQ/PUN-7300/0821)</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Section for Institute Image -->
-  <section class="institute-image">
-    <h2>Our Institute</h2>
-    <img src="institute.jpg" alt="Institute Image" class="institute-pic">
+  <!-- Institute Image -->
+  <section class="institute-showcase">
+    <div class="container">
+      <h2>Our Institute</h2>
+      <img src="institute.jpg" alt="NSD Institute Building" class="institute-image"/>
+    </div>
   </section>
 
-  <!-- Section for Student Note -->
-  <section class="student-note">
-    <h2>Student's Note</h2>
-    <p>Dear Students,
-
-        Welcome to NSD Coaching Institute, My motto in life is to make every youth realize and demonstrate their best potential and be a winner in life. Myself, Navdeep Singh Dadhwal working as a Centre Manager at a Multinational Education-based company.
-        
-        For the last 20 years, I have trained more than 4000 students and empowered them with the best of education under various Government Skills Training and also Graduate & Post Graduate courses like BCA, Btech, MCA and IMO, NTSE and CBSE Math subject coaching. 
-        
-        NSD Institute provides a quality educational environment where academic excellence is both accessible and affordable to students from all backgrounds.
-        
-        I assure you that you will receive the best training and see the transformation in yourself regarding the importance of technical education.</p>
-    <p>- Navdeep Singh Dadhwal, Managing Director</p>
+  <!-- Student's Note -->
+  <section class="student-note-section">
+    <div class="container">
+      <h2>From the Managing Director</h2>
+      <blockquote>
+        <p>
+          Welcome to NSD Coaching Institute. My motto in life is to help every youth realize their potential and become a winner.
+          I, Navdeep Singh Dadhwal, currently serve as a Centre Manager in a multinational education-based company.
+        </p>
+        <p>
+          Over the past 20 years, I have trained 4000+ students through various government skill initiatives and academic courses like BCA, BTech, MCA, and more. NSD provides accessible and affordable technical education to all.
+        </p>
+        <p>
+          I assure you that NSD will offer the best training and help you transform through quality technical education.
+        </p>
+        <footer>- Navdeep Singh Dadhwal, Managing Director</footer>
+      </blockquote>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2021 NSD Institute</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2021 NSD Computer Institute. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
