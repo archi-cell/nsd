@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D1B2A;
+  color: #F8F9FA;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* Header */
+header {
+  background-color: #1B263B;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 70px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 14px 22px;
+  color: #F8F9FA;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: white;
+  color: #0D1B2A;
+}
+
+/* Certificate Section */
+.certificate {
+  max-width: 900px;
+  margin: 80px auto 100px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.certificate h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #FFB703;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.certificate p {
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+  color: #E0E1DD;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Certificate Image */
+.certificate-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.certificate-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(255, 183, 3, 0.35);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.certificate-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #1B263B;
+  color: #BFD7EA;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 25px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  nav a {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+
+  .certificate {
+    margin: 50px 20px 70px;
+    padding: 0 20px;
+  }
+
+  .certificate h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+
+  .certificate p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    padding: 20px 15px;
+    font-size: 0.9rem;
+  }
+}
