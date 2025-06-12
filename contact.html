@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Institute Website</title>
-  <link rel="stylesheet" href="contact.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="contact.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <!-- Header -->
+  <header data-aos="fade-down" data-aos-duration="1000">
     <div class="logo">
       <img src="logo.png" alt="Institute Logo">
       <h1>NSD Computer Institute</h1>
@@ -16,27 +26,43 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="certificate.html">Certificate</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Contact Section -->
   <section class="contact">
-    <h1>Contact Us</h1>
-    <p>Email: navdeeprgniyd@gmail.com</p>
-    <p>Phone: 9646004180</p>
+    <h1 data-aos="fade-up">Contact Us</h1>
+    <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+      <p><strong>Email:</strong> navdeeprgniyd@gmail.com</p>
+      <p><strong>Phone:</strong> 9646004180</p>
+    </div>
 
-    <!-- WhatsApp button -->
-    <a href="https://wa.me/9646004180?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20the%20courses.
-    " class="whatsapp-button" target="_blank">
-      Message on WhatsApp
-    </a>
+    <!-- WhatsApp Button -->
+    <div class="whatsapp" data-aos="zoom-in" data-aos-delay="300">
+      <a href="https://wa.me/9646004180?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20the%20courses."
+         class="whatsapp-button" target="_blank">
+        Message on WhatsApp
+      </a>
+    </div>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer data-aos="fade-up">
     <p>&copy; 2021 NSD Institute</p>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 </html>
