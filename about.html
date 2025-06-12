@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Institute Website</title>
-  <link rel="stylesheet" href="about.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="about.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <!-- Header -->
+  <header data-aos="fade-down" data-aos-duration="1000">
     <div class="logo">
       <img src="logo.png" alt="Institute Logo">
       <h1>NSD Computer Institute</h1>
@@ -15,7 +25,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="certificate.html">Certificate</a></li>
@@ -23,36 +33,45 @@
     </nav>
   </header>
 
+  <!-- About Section -->
   <section class="about">
-    <h1>About Me</h1>
-    <div class="about-content">
+    <h1 data-aos="fade-up">About Me</h1>
+    <div class="about-content" data-aos="fade-right" data-aos-delay="200">
       <div class="about-image">
         <img src="navdeep.jpg" alt="Navdeep Singh Dadhwal">
       </div>
-      <p>Myself, Navdeep Singh Dadhwal working as a Centre Manager at a Multinational Education-based company.</p>
-      <p>I have 20 plus years of rich experience in conducting Govt. recognized Computer Trainings and 13 Years Mathematics coaching to 6th Standards to 10th Standards.</p>
-      <p>I have worked in International Organization Commonwealth as ICT Officer and Senior Computer Faculty at Government Organization RGNIYD Regional Centre.</p>
+      <div>
+        <p>Myself, Navdeep Singh Dadhwal working as a Centre Manager at a Multinational Education-based company.</p>
+        <p>I have 20+ years of rich experience in conducting Govt. recognized Computer Trainings and 13 Years Mathematics coaching to 6th to 10th Standards.</p>
+        <p>I have worked in International Organization Commonwealth as ICT Officer and as a Senior Computer Faculty at Government Organization RGNIYD Regional Centre.</p>
+      </div>
     </div>
 
-    <h1>About Institute</h1>
-    <div class="about-content">
+    <h1 data-aos="fade-up">About Institute</h1>
+    <div class="about-content" data-aos="fade-left" data-aos-delay="300">
       <div class="about-image">
         <img src="centre.jpg" alt="Institute Image">
       </div>
-      <p>NSD Computer Institute is a leading provider of computer skills training and tutoring services. We offer comprehensive programs to help students develop essential computer skills and also provide tutoring up to 10th grade. Our experienced instructors are dedicated to empowering students with the knowledge and expertise they need to succeed in the digital age. NSD (National standard Institute of Information Technology) is Chandigarh based, focused on skills and talent developed institute. The Institute was set up in 2021 to help the nascent IT industry overcome its human resource challenges. NSD offers training and development to individuals, enterprises, and institutions.</p>
+      <div>
+        <p>NSD Computer Institute is a leading provider of computer skills training and tutoring services. We offer comprehensive programs to help students develop essential computer skills and also provide tutoring up to 10th grade.</p>
+        <p>NSD (National Standard Institute of Information Technology), based in Chandigarh, was established in 2021 to help the nascent IT industry overcome its human resource challenges. The institute focuses on training individuals, enterprises, and institutions.</p>
+      </div>
     </div>
-
-    <!-- <h1>Our Goal</h1>
-    <div class="about-content"> -->
-      <!-- <div class="about-image">
-        <img src="goal.jpg" alt="Our Goal Image">
-      </div> -->
-      <!-- <p>At NSD Computer Institute, our mission is to provide high-quality, affordable technology solutions to small businesses and individuals. We strive to stay up-to-date with the latest trends and advancements in the industry.</p> -->
-    <!-- </div> -->
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer data-aos="fade-up">
     <p>&copy; 2021 NSD Institute</p>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+      offset: 100,
+    });
+  </script>
 </body>
 </html>
