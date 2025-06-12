@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -8,181 +6,99 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #0D1B2A;
-  color: #F8F9FA;
-  line-height: 1.8;
-  font-size: 18px;
+  background: #f4f4f4;
+  color: #222;
 }
 
-/* Header */
 header {
-  background-color: #1B263B;
-  padding: 30px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #001f3f;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
 }
 
 .logo {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .logo img {
-  height: 70px;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-  transform: scale(1.1);
+  height: 50px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-nav a {
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  color: #ffc107;
   text-decoration: none;
-  padding: 14px 22px;
-  color: #F8F9FA;
-  border-radius: 8px;
-  transition: all 0.3s ease;
   font-weight: 600;
-  font-size: 1.1rem;
+  transition: 0.3s;
 }
 
-nav a:hover,
-nav a:focus {
-  background-color: white;
-  color: #0D1B2A;
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
 }
 
-/* Courses Section */
 .courses {
-  max-width: 1200px;
-  margin: 80px auto 100px;
-  padding: 0 40px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .courses h1 {
-  font-size: 3rem;
-  margin-bottom: 60px;
-  color: #FFB703;
-  font-weight: 700;
-  letter-spacing: 1.2px;
+  font-size: 2.5rem;
+  color: #001f3f;
+  margin-bottom: 30px;
 }
 
-/* Course list container */
 .course-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px 50px;
-  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
 }
 
-/* Individual course card */
 .course-item {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 35px 30px;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
-  text-align: left;
-  min-height: 220px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .course-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(255, 183, 3, 0.65);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .course-item h2 {
-  font-size: 1.5rem;
-  margin-bottom: 22px;
-  color: #FFD166;
-  font-weight: 700;
-  line-height: 1.3;
+  color: #001f3f;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .course-item p {
-  font-size: 1.15rem;
-  margin: 10px 0;
-  color: #E0E1DD;
+  font-size: 0.95rem;
+  color: #333;
+  margin: 4px 0;
 }
 
-.course-item strong {
-  color: #FFB703;
-}
-
-/* Footer */
 footer {
-  background-color: #1B263B;
-  color: #BFD7EA;
+  background-color: #001f3f;
+  color: #ffc107;
   text-align: center;
-  padding: 30px 20px;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    padding: 20px 25px;
-  }
-  
-  nav ul {
-    justify-content: center;
-    gap: 20px;
-  }
-
-  nav a {
-    padding: 12px 18px;
-    font-size: 1rem;
-  }
-
-  .courses {
-    margin: 50px 20px 70px;
-    padding: 0 20px;
-  }
-
-  .courses h1 {
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-  }
-
-  .course-list {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .course-item {
-    min-height: auto;
-    padding: 30px 25px;
-  }
-
-  .course-item h2 {
-    font-size: 1.3rem;
-    margin-bottom: 18px;
-  }
-
-  .course-item p {
-    font-size: 1.05rem;
-  }
-
-  footer {
-    padding: 20px 15px;
-    font-size: 0.9rem;
-  }
+  padding: 15px 0;
+  font-weight: 500;
 }
