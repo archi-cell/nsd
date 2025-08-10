@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NSD Computer Institute - Enrollment Form</title>
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --card: #ffffff;
+            --accent: #0b6efd;
+            --muted: #6b7280;
+            --radius: 12px;
+            --maxw: 920px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            background: var(--bg);
+            margin: 24px;
+            color: #0f172a
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: 0 auto
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px
+        }
+
+        .brand {
+            font-weight: 700;
+            font-size: 18px
+        }
+
+        .sub {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        form.card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: 0 6px 20px rgba(13, 24, 39, 0.06)
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px
+        }
+
+        @media (max-width:720px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 6px;
+            color: #0f172a
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        input[type=date],
+        select,
+        textarea,
+        input[type=number] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e6e9ef;
+            border-radius: 8px;
+            font-size: 14px
+        }
+
+        textarea {
+            min-height: 90px;
+            resize: vertical
+        }
+
+        .field-row {
+            margin-bottom: 12px
+        }
+
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .courses label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid #eef2ff;
+            background: #fbfdff;
+            font-size: 14px
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 10px
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer
+        }
+
+        .secondary {
+            background: #fff;
+            border: 1px solid #d1d5db;
+            color: #0f172a
+        }
+
+        .office {
+            margin-top: 18px;
+            padding: 12px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #fff, #fbfdff);
+            border: 1px dashed #e6eefc
+        }
+
+        .note {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 8px
+        }
+
+        .full {
+            grid-column: 1/-1
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <div class="brand">NSD-Computer Institute</div>
+                <div class="sub">Centre for excellence in Information Technology — ISO 9001:2015 | Registered under
+                    MSME, Govt of India</div>
+            </div>
+        </header>
+
+        <!-- IMPORTANT: replace the action URL below with your Formspree endpoint (e.g. https://formspree.io/f/abcd1234) -->
+        <form class="card" id="enrollForm" method="POST" action="https://formspree.io/f/xblkqkrp">
+
+            <div class="grid">
+                <div class="field-row full">
+                    <label for="studentName">Name of Student</label>
+                    <input id="studentName" name="student_name" type="text" placeholder="Full name" required />
+                </div>
+
+                <div class="field-row full">
+                    <label>Course Opted For</label>
+                    <div class="courses">
+                        <label><input type="checkbox" name="course[]" value="Complete Basics"> Complete Basics</label>
+                        <label><input type="checkbox" name="course[]" value="Web Designing"> Web Designing</label>
+                        <label><input type="checkbox" name="course[]" value="Graphic Designing"> Graphic
+                            Designing</label>
+                        <label><input type="checkbox" name="course[]" value="Tally"> Tally</label>
+                        <label><input type="checkbox" name="course[]" value="PHP with MySQL"> PHP with MySQL</label>
+                        <label><input type="checkbox" name="course[]" value="DCA (Six Months)"> DCA (Six Months)</label>
+                        <label><input type="checkbox" name="course[]" value="ADCA (One Year)"> ADCA (One Year)</label>
+                        <label><input type="checkbox" name="course[]" value="CCC (Four Months)"> CCC (Four
+                            Months)</label>
+                        <label style="flex:1"><input type="checkbox" id="courseOtherChk" name="course[]" value="Other">
+                            Other: <input type="text" name="course_other" placeholder="Please specify"
+                                style="border:none;background:transparent;padding:0 6px;min-width:140px"></label>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <label for="duration">Duration</label>
+                    <input id="duration" name="duration" type="text" placeholder="e.g., 3 months / 6 months" />
+                </div>
+
+                <div class="field-row">
+                    <label for="batchTiming">Batch Timing</label>
+                    <input id="batchTiming" name="batch_timing" type="text"
+                        placeholder="e.g., Mon-Fri 6:00 PM - 8:00 PM" />
+                </div>
+
+                <div class="field-row full">
+                    <label for="courseDetail">Course Detail</label>
+                    <textarea id="courseDetail" name="course_detail"
+                        placeholder="Any specifics or modules you want to mention"></textarea>
+                </div>
+
+                <div class="field-row">
+                    <label for="parentName">Parent / Guardian Name</label>
+                    <input id="parentName" name="parent_name" type="text" />
+                </div>
+
+                <div class="field-row full">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" placeholder="Street, City, State, PIN"></textarea>
+                </div>
+
+                <div class="field-row">
+                    <label for="dob">Date of Birth</label>
+                    <input id="dob" name="date_of_birth" type="date" />
+                </div>
+
+                <div class="field-row">
+                    <label for="phone">Telephone / Mobile No</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX" />
+                </div>
+
+                <div class="field-row">
+                    <label for="email">Email Id</label>
+                    <input id="email" name="email" type="email" />
+                </div>
+
+                <div class="field-row">
+                    <label for="qualification">Academic Qualification</label>
+                    <input id="qualification" name="academic_qualification" type="text" />
+                </div>
+
+                <div class="field-row">
+                    <label for="occupation">Occupation (If Employed)</label>
+                    <input id="occupation" name="occupation" type="text" />
+                </div>
+
+                <div class="field-row">
+                    <label for="installments">No. of Installment</label>
+                    <input id="installments" name="installments" type="number" min="1" />
+                </div>
+
+                <div class="field-row">
+                    <label for="signature">Student Signature (type full name)</label>
+                    <input id="signature" name="student_signature" type="text"
+                        placeholder="Student signature / typed name" />
+                </div>
+
+                <div class="field-row full">
+                    <label for="dateSigned">Date</label>
+                    <input id="dateSigned" name="date_signed" type="date" />
+                </div>
+
+            </div>
+
+            <div class="actions">
+                <button type="submit">Submit Enrollment</button>
+                <button type="reset" class="secondary">Reset</button>
+                <!-- <div class="note">After submission the form will post to Formspree. Replace the action URL at the top of
+                    this file with your Formspree endpoint.</div> -->
+            </div>
+
+            <div class="office">
+                <strong>Office Use</strong>
+                <div style="margin-top:8px">
+                    <label>Course commencement date / completion date / Course Fee / Counseled By</label>
+                    <textarea name="office_notes" placeholder="(Office will fill these fields)"></textarea>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script>
+        // small UX: intercept submit to show friendly message (Formspree will still receive data)
+        document.getElementById('enrollForm').addEventListener('submit', function (e) {
+            // Optionally, you could show a loader or disable the submit button here.
+            // Do not preventDefault -- we want the form to post to Formspree.
+            // Example: ensure action is replaced
+            if (this.getAttribute('action').includes('your-form-id')) {
+                if (!confirm('This form is still using the placeholder Formspree action. Replace it with your Formspree URL to actually receive submissions. Click OK to continue submitting to the placeholder.')) {
+                    e.preventDefault();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
