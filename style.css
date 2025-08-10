@@ -124,31 +124,6 @@ nav {
 }
 
 
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: #ffd700;
-  border-bottom: 2px solid #ffd700;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 24px;
-  color: #fff;
-}
-
 /* Hero Section */
 .hero-section {
   background: linear-gradient(to right, #002147, #004080);
@@ -217,7 +192,7 @@ nav {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -246,6 +221,7 @@ nav {
 
 .main-header.shrink .logo h1 {
   font-size: 1.2rem;
-}
+} */
+
 
 
