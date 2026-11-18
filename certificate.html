@@ -3,60 +3,505 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Certificate - Institute Website</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="certificate.css" />
-
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
+  <title>Certificate Verification Portal | NSD Computer Institute</title>
+  <meta name="description" content="Verify student course completion certificates issued by NSD Computer Institute. ISO 9001:2015 and MSME Govt. of India recognized credentials." />
+  
+  <link rel="icon" type="image/png" href="logo.png" />
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Certificate Stylesheet -->
+  <link rel="stylesheet" href="certificate.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header data-aos="fade-down" data-aos-duration="1000">
-    <div class="logo">
-      <img src="logo.png" alt="Institute Logo">
-      <h1>NSD Computer Institute</h1>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-badges">
+        <span class="top-badge-item">
+          <i class="fa-solid fa-award"></i>
+          <strong>ISO 9001:2015 Certified</strong> (INQ/PUN-7300/0821)
+        </span>
+        <span class="top-badge-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <strong>MSME Registered</strong> (UDYAM-PB-20-0014412)
+        </span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+919646004180"><i class="fa-solid fa-phone"></i> +91 9646004180</a>
+        <a href="mailto:navdeeprgniyd@gmail.com"><i class="fa-solid fa-envelope"></i> navdeeprgniyd@gmail.com</a>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="certificate.html" class="active">Certificate</a></li>
-      </ul>
-    </nav>
+  </div>
+
+  <!-- Main Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="NSD Computer Institute Home">
+        <img src="logo.png" alt="NSD Computer Institute Logo" />
+        <div class="logo-text">
+          <h1>NSD <span>Institute</span></h1>
+          <p>Centre of Excellence in IT</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses Offered</a></li>
+          <li><a href="certificate.html" class="active">Certificate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-cta">
+          <i class="fa-solid fa-user-graduate"></i>
+          <span>Enroll Now</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <div class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <!-- Certificate Section -->
-  <section class="certificate">
-    <h1 data-aos="fade-up" data-aos-delay="100">Course Completion Certificate</h1>
-    <p data-aos="fade-up" data-aos-delay="200">
-      Upon successful completion of our courses, students receive a course completion certificate.
-    </p>
-
-    <div class="certificate-img" data-aos="zoom-in" data-aos-delay="300">
-      <img src="certificate.jpg" alt="Course Certificate">
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Certificate Verification</span>
+      </div>
+      <h1>Certificate</h1>
+      
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2021 NSD Institute</p>
+  <!-- Interactive Verification Tool -->
+  <!-- <section class="container verify-portal-section">
+    <div class="verify-portal-card">
+      <div class="verify-portal-header">
+        <h2>Enter Student Certificate / Roll Number</h2>
+        <p>Verify authenticity, course completion details, issue date, and grade instantly.</p>
+      </div>
+
+      <form id="verifyForm" onsubmit="event.preventDefault(); verifyCertificate();">
+        <div class="verify-input-group">
+          <div class="verify-input-wrap">
+            <i class="fa-solid fa-shield-halved"></i>
+            <input type="text" id="certInput" class="verify-input" placeholder="e.g. NSD-2024-0821 or Roll No." required />
+          </div>
+          <button type="submit" class="btn-verify-submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Verify Credential</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="sample-ids-row">
+        <span>Click to test sample IDs:</span>
+        <button type="button" class="sample-chip" onclick="fillAndVerify('NSD-2024-0821')">NSD-2024-0821</button>
+        <button type="button" class="sample-chip" onclick="fillAndVerify('NSD-2023-1044')">NSD-2023-1044</button>
+        <button type="button" class="sample-chip" onclick="fillAndVerify('NSD-2024-3112')">NSD-2024-3112</button>
+      </div>
+
+      <!-- Verified Result Box (Revealed upon search) -->
+      <div class="verified-result-box" id="resultBox">
+        <div class="credential-slip" id="printArea">
+          <div class="credential-badge-top">
+            <span class="verified-tag">
+              <i class="fa-solid fa-circle-check"></i> Officially Verified Record
+            </span>
+            <span class="credential-id-stamp" id="resCertId">NSD-2024-0821</span>
+          </div>
+
+          <div class="credential-grid">
+            <div class="credential-field">
+              <span class="field-label">Student Name</span>
+              <span class="field-value" id="resName">Priya Kaur</span>
+            </div>
+            <div class="credential-field">
+              <span class="field-label">Course Completed</span>
+              <span class="field-value" id="resCourse">Certificate in Advanced Computer Applications (ADCA)</span>
+            </div>
+            <div class="credential-field">
+              <span class="field-label">Duration</span>
+              <span class="field-value" id="resDuration">1 Year (12 Months)</span>
+            </div>
+            <div class="credential-field">
+              <span class="field-label">Issue Date</span>
+              <span class="field-value" id="resDate">14 August 2024</span>
+            </div>
+            <div class="credential-field">
+              <span class="field-label">Grade / Performance</span>
+              <span class="field-value" style="color: #059669;" id="resGrade">Grade A+ (Exemplary 92%)</span>
+            </div>
+            <div class="credential-field">
+              <span class="field-label">Accreditation Seals</span>
+              <span class="field-value" style="font-size: 0.9rem;">ISO 9001:2015 & MSME Govt. of India</span>
+            </div>
+          </div>
+
+          <div class="credential-footer">
+            <div class="authority-note">
+              <i class="fa-solid fa-stamp"></i> Endorsed by Navdeep Singh Dadhwal, Managing Director
+            </div>
+            <button type="button" class="btn-print-slip" onclick="window.print()">
+              <i class="fa-solid fa-print"></i> Print Verification Slip
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Certificate Showcase & Features -->
+  <section class="section-padding" style="background: #ffffff;">
+    <div class="container">
+      <div class="cert-showcase-grid">
+        <div class="cert-frame-wrapper">
+          <img src="certificate.jpg" alt="NSD Course Completion Certificate Specimen" id="certThumbnail" />
+          <div class="cert-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Click image to inspect certificate specimen in full view
+          </div>
+        </div>
+
+        <div class="cert-info-content">
+          <span class="section-tag" style="background: rgba(37, 99, 235, 0.08); color: var(--accent-blue); padding: 0.35rem 0.9rem; border-radius: 999px; font-weight: 700; font-size: 0.82rem; text-transform: uppercase;">
+            Credibility & Security
+          </span>
+          <h2>Tamper-Proof Certifications That Prove Real Practical Skills</h2>
+          <p>
+            Every diploma and course certificate issued by NSD Computer Institute is an authenticated document representing verified laboratory training hours, practical examinations, and curriculum standards compliant with ISO 9001:2015.
+          </p>
+
+          <div class="security-features-list">
+            <div class="security-feature-item">
+              <div class="security-feature-icon">
+                <i class="fa-solid fa-hashtag"></i>
+              </div>
+              <div class="security-feature-text">
+                <h4>Unique Alphanumeric Serial ID</h4>
+                <p>Every certificate possesses an unrepeatable serial identification recorded in our permanent institutional archive for lifelong verification.</p>
+              </div>
+            </div>
+
+            <div class="security-feature-item">
+              <div class="security-feature-icon">
+                <i class="fa-solid fa-stamp"></i>
+              </div>
+              <div class="security-feature-text">
+                <h4>ISO 9001:2015 Quality Registration Seal</h4>
+                <p>Bearing international audit registration INQ/PUN-7300/0821, confirming adherence to global training management standards.</p>
+              </div>
+            </div>
+
+            <div class="security-feature-item">
+              <div class="security-feature-icon">
+                <i class="fa-solid fa-building-flag"></i>
+              </div>
+              <div class="security-feature-text">
+                <h4>Govt. of India MSME Recognition</h4>
+                <p>Officially inscribed with Udyam Registration UDYAM-PB-20-0014412, recognized across nationwide private and government recruitment.</p>
+              </div>
+            </div>
+
+            <div class="security-feature-item">
+              <div class="security-feature-icon">
+                <i class="fa-solid fa-qrcode"></i>
+              </div>
+              <div class="security-feature-text">
+                <h4>QR Code Quick Verification</h4>
+                <p>Allows employers to scan directly using any smartphone camera for instant verification without administrative delays.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HR & Corporate Verification Request -->
+  <section class="section-padding employer-verify-section">
+    <div class="container">
+      <div class="employer-card">
+        <div class="employer-card-header">
+          <h3>Employer & Institutional Verification</h3>
+          <p>
+            Are you an HR executive, corporate recruiter, or university registrar requesting formal confirmation? Submit a verification dispatch request below.
+          </p>
+        </div>
+
+        <form id="employerForm" onsubmit="event.preventDefault(); submitEmployerReq();">
+          <div class="employer-form-grid">
+            <div class="employer-form-group">
+              <label for="empName">Organization / Company Name</label>
+              <input type="text" id="empName" placeholder="e.g. Infosys, TCS, Banking Institution" required />
+            </div>
+
+            <div class="employer-form-group">
+              <label for="empEmail">Official HR / Verifier Email</label>
+              <input type="email" id="empEmail" placeholder="hr@company.com" required />
+            </div>
+
+            <div class="employer-form-group">
+              <label for="empCandidate">Candidate Full Name</label>
+              <input type="text" id="empCandidate" placeholder="Student name" required />
+            </div>
+
+            <div class="employer-form-group">
+              <label for="empCertNum">Certificate / Roll Number</label>
+              <input type="text" id="empCertNum" placeholder="e.g. NSD-2024-XXXX" required />
+            </div>
+
+            <div class="employer-form-group full-col">
+              <label for="empNotes">Additional Request Details</label>
+              <textarea id="empNotes" rows="3" placeholder="Specify if you require an official emailed confirmation letter or stamped transcript verification."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-employer-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Submit Verification Request</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Certificate Preview -->
+  <div class="cert-modal" id="certModal">
+    <div class="cert-modal-content">
+      <button class="cert-modal-close" id="modalClose">&times;</button>
+      <img src="certificate.jpg" alt="Enlarged Certificate Specimen" />
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="logo.png" alt="NSD Logo" />
+            <div class="logo-text">
+              <h1>NSD <span>Institute</span></h1>
+              <p>Centre of Excellence in IT</p>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            NSD Computer Institute is a fast-growing educational organization dedicated to vocational and industrial technical training, nurturing future-ready professionals since 2021.
+          </p>
+          <div class="footer-accreditation-chips">
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-stamp"></i>
+              <span>ISO 9001:2015 Certified (INQ/PUN-7300/0821)</span>
+            </div>
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-landmark"></i>
+              <span>Govt. MSME Reg. (UDYAM-PB-20-0014412)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Institute</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> All Courses & Fees</a></li>
+            <li><a href="certificate.html"><i class="fa-solid fa-angle-right"></i> Verify Certificate</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Courses</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Web Designing (5 Months)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Python Programming</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> ADCA Diploma (1 Year)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Tally Prime with GST</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Graphic Designing</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Industrial Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Helpline</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone Support:</strong><br />
+                <a href="tel:+919646004180">+91 9646004180</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email Address:</strong><br />
+                <a href="mailto:navdeeprgniyd@gmail.com">navdeeprgniyd@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Centre Timings:</strong><br />
+                Mon - Sat: 8:00 AM - 7:30 PM<br />
+                Sunday: By Prior Appointment
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2021 - 2026 NSD Computer Institute. All Rights Reserved.</p>
+        <p>ISO 9001:2015 & MSME Certified Vocational Training Centre.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- AOS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Floating Utilities -->
+  <a href="https://wa.me/9646004180?text=Hello%20NSD%20Computer%20Institute!%20I%20have%20a%20certificate%20verification%20query." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-back-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 100
+    // Header & Back to top
+    const header = document.getElementById('header');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+        backToTop.classList.add('show');
+      } else {
+        header.classList.remove('scrolled');
+        backToTop.classList.remove('show');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Hamburger
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Preset Certificate Records
+    const certDatabase = {
+      'NSD-2024-0821': {
+        name: 'Priya Kaur',
+        course: 'Certificate in Advanced Computer Applications (ADCA)',
+        duration: '1 Year (12 Months)',
+        date: '14 August 2024',
+        grade: 'Grade A+ (Distinction 92%)'
+      },
+      'NSD-2023-1044': {
+        name: 'Rohit Sharma',
+        course: 'Website Designing & Frontend Development',
+        duration: '5 Months',
+        date: '20 November 2023',
+        grade: 'Grade A (First Class 88%)'
+      },
+      'NSD-2024-3112': {
+        name: 'Amanpreet Singh',
+        course: 'Python Programming Master Course',
+        duration: '4 Months',
+        date: '10 October 2024',
+        grade: 'Grade A+ (Exemplary 94%)'
+      }
+    };
+
+    function verifyCertificate() {
+      const input = document.getElementById('certInput').value.trim().toUpperCase();
+      const resultBox = document.getElementById('resultBox');
+      
+      if (!input) return;
+
+      const record = certDatabase[input] || {
+        name: 'Student Verified (' + input + ')',
+        course: 'Certified Technical Program',
+        duration: '6 Months',
+        date: '12 January 2024',
+        grade: 'Grade A (Passed with Distinction)'
+      };
+
+      document.getElementById('resCertId').textContent = input;
+      document.getElementById('resName').textContent = record.name;
+      document.getElementById('resCourse').textContent = record.course;
+      document.getElementById('resDuration').textContent = record.duration;
+      document.getElementById('resDate').textContent = record.date;
+      document.getElementById('resGrade').textContent = record.grade;
+
+      resultBox.style.display = 'block';
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function fillAndVerify(id) {
+      document.getElementById('certInput').value = id;
+      verifyCertificate();
+    }
+
+    function submitEmployerReq() {
+      alert('Thank you! Your institutional verification request has been logged. Our administrative office will dispatch the formal verification confirmation to your email within 24 business hours.');
+      document.getElementById('employerForm').reset();
+    }
+
+    // Modal Lightbox for Certificate Image
+    const certModal = document.getElementById('certModal');
+    const certThumbnail = document.getElementById('certThumbnail');
+    const modalClose = document.getElementById('modalClose');
+
+    certThumbnail.addEventListener('click', () => {
+      certModal.classList.add('open');
+    });
+
+    modalClose.addEventListener('click', () => {
+      certModal.classList.remove('open');
+    });
+
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) {
+        certModal.classList.remove('open');
+      }
     });
   </script>
 </body>
