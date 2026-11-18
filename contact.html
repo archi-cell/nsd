@@ -3,65 +3,500 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Institute Website</title>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="contact.css" />
-
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
+  <title>Contact Us & Admissions | NSD Computer Institute</title>
+  <meta name="description" content="Connect with NSD Computer Institute for course admissions, free counseling, and fee inquiries. Call or WhatsApp at +91 9646004180 or visit our campus." />
+  
+  <link rel="icon" type="image/png" href="logo.png" />
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Contact Stylesheet -->
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header data-aos="fade-down" data-aos-duration="1000">
-    <div class="logo">
-      <img src="logo.png" alt="Institute Logo">
-      <h1>NSD Computer Institute</h1>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-badges">
+        <span class="top-badge-item">
+          <i class="fa-solid fa-award"></i>
+          <strong>ISO 9001:2015 Certified</strong> (INQ/PUN-7300/0821)
+        </span>
+        <span class="top-badge-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <strong>MSME Registered</strong> (UDYAM-PB-20-0014412)
+        </span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+919646004180"><i class="fa-solid fa-phone"></i> +91 9646004180</a>
+        <a href="mailto:navdeeprgniyd@gmail.com"><i class="fa-solid fa-envelope"></i> navdeeprgniyd@gmail.com</a>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="certificate.html">Certificate</a></li>
-      </ul>
-    </nav>
+  </div>
+
+  <!-- Main Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="NSD Computer Institute Home">
+        <img src="logo.png" alt="NSD Computer Institute Logo" />
+        <div class="logo-text">
+          <h1>NSD <span>Institute</span></h1>
+          <p>Centre of Excellence in IT</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses Offered</a></li>
+          <li><a href="certificate.html">Certificate</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-cta">
+          <i class="fa-solid fa-user-graduate"></i>
+          <span>Enroll Now</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <div class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h1 data-aos="fade-up">Contact Us</h1>
-    <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
-      <p><strong>Email:</strong> navdeeprgniyd@gmail.com</p>
-      <p><strong>Phone:</strong> 9646004180</p>
-    </div>
-
-    <!-- WhatsApp Button -->
-    <div class="whatsapp" data-aos="zoom-in" data-aos-delay="300">
-      <a href="https://wa.me/9646004180?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20the%20courses."
-         class="whatsapp-button" target="_blank">
-        Message on WhatsApp
-      </a>
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Contact Us</span>
+      </div>
+      <h1>Get in Touch & Visit Our Campus</h1>
+      <p>
+        Have questions regarding batch timings, fee installments, or course details? Connect directly with our managing director and academic admissions team.
+      </p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2021 NSD Institute</p>
+  <!-- Quick Contact Cards (4 Columns) -->
+  <section class="container contact-cards-section">
+    <div class="contact-cards-grid">
+      <!-- Card 1: Phone -->
+      <div class="contact-quick-card">
+        <div class="contact-card-icon icon-blue">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <h3>Direct Calling Helpline</h3>
+        <p>Call our administrative desk for instant answers to admissions & batches.</p>
+        <a href="tel:+919646004180" class="contact-card-link">
+          <span>+91 9646004180</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Card 2: WhatsApp -->
+      <div class="contact-quick-card">
+        <div class="contact-card-icon icon-green">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp Support</h3>
+        <p>Chat directly with our counselor, receive syllabi PDFs and fee charts.</p>
+        <a href="https://wa.me/9646004180?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20the%20courses%20at%20NSD%20Institute." target="_blank" class="contact-card-link" style="color: #10b981;">
+          <span>Message on WhatsApp</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Card 3: Email -->
+      <div class="contact-quick-card">
+        <div class="contact-card-icon icon-amber">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <h3>Official Email Desk</h3>
+        <p>Send institutional verification inquiries and corporate training requests.</p>
+        <a href="mailto:navdeeprgniyd@gmail.com" class="contact-card-link" style="color: #d97706;">
+          <span>navdeeprgniyd@gmail.com</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Card 4: Hours -->
+      <div class="contact-quick-card">
+        <div class="contact-card-icon icon-purple">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+        <h3>Institute Working Hours</h3>
+        <p>Morning & evening batches operating throughout the week.</p>
+        <span style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; color: var(--primary-navy);">
+          Mon - Sat: 8:00 AM - 7:30 PM
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Form & Campus Location Split -->
+  <section class="section-padding" style="background: #ffffff;">
+    <div class="container">
+      <div class="contact-split-grid">
+
+        <!-- Left: Interactive Admission Form -->
+        <div class="inquiry-form-card">
+          <div class="form-header">
+            <span class="form-tag">Admissions 2025-2026</span>
+            <h2>Send An Admission & Course Inquiry</h2>
+            <p>Fill out the form below and our counselor will get back to you within 2 hours.</p>
+          </div>
+
+          <form id="admissionForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row-grid">
+              <div class="input-field-group">
+                <label for="studentName">Your Full Name *</label>
+                <input type="text" id="studentName" placeholder="e.g. Gurpreet Singh" required />
+              </div>
+
+              <div class="input-field-group">
+                <label for="studentPhone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="studentPhone" placeholder="+91 9XXXXXXXXX" required />
+              </div>
+
+              <div class="input-field-group">
+                <label for="studentEmail">Email Address</label>
+                <input type="email" id="studentEmail" placeholder="yourname@gmail.com" />
+              </div>
+
+              <div class="input-field-group">
+                <label for="courseChoice">Course Interested In *</label>
+                <select id="courseChoice" required>
+                  <option value="" disabled selected>Select a Program...</option>
+                  <option value="Website Designing (5 Months - ₹4000)">Website Designing (5 Months - ₹4,000)</option>
+                  <option value="ADCA 1 Year Master Diploma (₹8400)">ADCA 1-Year Master Diploma (₹8,400)</option>
+                  <option value="Python Programming (4 Months - ₹10000)">Python Programming (4 Months - ₹10,000)</option>
+                  <option value="Tally Prime with GST (1 Month - ₹1500)">Tally Prime with GST (1 Month - ₹1,500)</option>
+                  <option value="Graphic Designing Diploma (2 Months - ₹2000)">Graphic Designing (2 Months - ₹2,000)</option>
+                  <option value="Computer Basics / Data Entry (₹800 - ₹1500)">Computer Basics / Data Entry</option>
+                  <option value="MS Office Comprehensive (3 Months - ₹2100)">MS Office Comprehensive (3 Months - ₹2,100)</option>
+                  <option value="C & C++ Programming (₹1500)">C & C++ Programming</option>
+                  <option value="PHP with MySQL (2 Months - ₹3000)">PHP with MySQL (2 Months - ₹3,000)</option>
+                  <option value="Core JAVA (2 Months - ₹3000)">Core JAVA (2 Months - ₹3,000)</option>
+                  <option value="Industrial Training (6 Months BCA/B.Tech - ₹6000)">Industrial Training (6 Months - ₹6,000)</option>
+                  <option value="CCA / DCA 6 Months (₹4800)">CCA / DCA (6 Months - ₹4,800)</option>
+                  <option value="School Tuition (Class 6th to 10th All Subjects)">School Tuition (Class 6th to 10th)</option>
+                  <option value="Other / Custom Inquiry">Other / Custom Inquiry</option>
+                </select>
+              </div>
+
+              <div class="input-field-group full-width">
+                <label for="batchTime">Preferred Batch Timing</label>
+                <select id="batchTime">
+                  <option value="Morning (8:00 AM - 11:00 AM)">Morning (8:00 AM - 11:00 AM)</option>
+                  <option value="Mid-Day (11:00 AM - 2:00 PM)">Mid-Day (11:00 AM - 2:00 PM)</option>
+                  <option value="Afternoon (2:00 PM - 5:00 PM)">Afternoon (2:00 PM - 5:00 PM)</option>
+                  <option value="Evening (5:00 PM - 7:30 PM)">Evening (5:00 PM - 7:30 PM)</option>
+                  <option value="Weekend Batch (Flexible)">Weekend Batch (Flexible)</option>
+                </select>
+              </div>
+
+              <div class="input-field-group full-width">
+                <label for="messageNotes">Your Message or Questions</label>
+                <textarea id="messageNotes" placeholder="Tell us about your educational background or any specific queries regarding fee installments, syllabus, or demo classes."></textarea>
+              </div>
+            </div>
+
+            <div class="form-action-buttons">
+              <button type="submit" class="btn-submit-inquiry">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Submit Inquiry</span>
+              </button>
+              <button type="button" class="btn-whatsapp-inquiry" onclick="sendViaWhatsApp()">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Send via WhatsApp</span>
+              </button>
+            </div>
+
+            <!-- Success Box -->
+            <div class="form-success-box" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              <h4>Inquiry Received Successfully!</h4>
+              <p>Thank you for reaching out. Navdeep Sir and our academic desk will contact you via Phone / WhatsApp shortly.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right: Campus Facility Preview & Map -->
+        <div class="campus-info-card">
+          <div class="campus-preview-box">
+            <img src="institute.jpg" alt="NSD Computer Institute Building" />
+            <h3>NSD Computer Institute Campus</h3>
+            <p>
+              Centrally situated with modern computer lab facilities, individual student PC stations, optical high-speed internet, and a welcoming academic atmosphere.
+            </p>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission FAQ Accordion -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Help & Clarifications</span>
+        <h2 class="section-title">Admission & Enrollment FAQs</h2>
+        <p class="section-subtitle">
+          Quick answers to commonly asked questions by students and parents.
+        </p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>What documents are required for enrolling in a computer course?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You only need a copy of your Aadhaar Card (or Government photo ID), two passport-sized photographs, and a copy of your highest educational mark sheet (e.g. 10th, 12th, or graduation mark sheet).
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How soon can I commence my classes after completing registration?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              New batches commence every Monday. Once your registration form is processed and your workstation slot is allocated, you can begin learning immediately without waiting for a new academic term.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I switch my batch timing later if my college schedule changes?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, absolutely. We understand students often have shifting college schedules or exam sessions. You can submit a simple batch change request to our desk and move between morning, afternoon, or evening batches smoothly.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are special discounts or installment concessions available?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, we offer special sibling discounts and merit-based concessions for dedicated students. All diploma programs support zero-interest installment plans so that finance never acts as a barrier to acquiring digital skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="logo.png" alt="NSD Logo" />
+            <div class="logo-text">
+              <h1>NSD <span>Institute</span></h1>
+              <p>Centre of Excellence in IT</p>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            NSD Computer Institute is a fast-growing educational organization dedicated to vocational and industrial technical training, nurturing future-ready professionals since 2021.
+          </p>
+          <div class="footer-accreditation-chips">
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-stamp"></i>
+              <span>ISO 9001:2015 Certified (INQ/PUN-7300/0821)</span>
+            </div>
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-landmark"></i>
+              <span>Govt. MSME Reg. (UDYAM-PB-20-0014412)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Institute</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> All Courses & Fees</a></li>
+            <li><a href="certificate.html"><i class="fa-solid fa-angle-right"></i> Verify Certificate</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Courses</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Web Designing (5 Months)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Python Programming</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> ADCA Diploma (1 Year)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Tally Prime with GST</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Graphic Designing</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Industrial Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Helpline</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone Support:</strong><br />
+                <a href="tel:+919646004180">+91 9646004180</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email Address:</strong><br />
+                <a href="mailto:navdeeprgniyd@gmail.com">navdeeprgniyd@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Centre Timings:</strong><br />
+                Mon - Sat: 8:00 AM - 7:30 PM<br />
+                Sunday: By Prior Appointment
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2021 - 2026 NSD Computer Institute. All Rights Reserved.</p>
+        <p>ISO 9001:2015 & MSME Certified Vocational Training Centre.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- AOS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Floating Utilities -->
+  <a href="https://wa.me/9646004180?text=Hello%20NSD%20Computer%20Institute!%20I%20am%20interested%20in%20taking%20admission." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-back-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 100
+    // Header & Back to top
+    const header = document.getElementById('header');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+        backToTop.classList.add('show');
+      } else {
+        header.classList.remove('scrolled');
+        backToTop.classList.remove('show');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Hamburger
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Handle Form Submit
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').style.display = 'block';
+      document.getElementById('admissionForm').reset();
+      document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // Direct WhatsApp Autofill Forwarder
+    function sendViaWhatsApp() {
+      const name = document.getElementById('studentName').value.trim();
+      const phone = document.getElementById('studentPhone').value.trim();
+      const course = document.getElementById('courseChoice').value;
+      const batch = document.getElementById('batchTime').value;
+      const notes = document.getElementById('messageNotes').value.trim();
+
+      if (!name || !phone || !course) {
+        alert('Please fill in your Name, Phone Number, and Course of interest before sending via WhatsApp.');
+        return;
+      }
+
+      const text = encodeURIComponent(
+        `Hello NSD Computer Institute!\n\n` +
+        `I would like to inquire about admission:\n` +
+        `• Name: ${name}\n` +
+        `• Phone: ${phone}\n` +
+        `• Course: ${course}\n` +
+        `• Preferred Timing: ${batch}\n` +
+        (notes ? `• Note: ${notes}\n` : '') +
+        `\nPlease share syllabus details and upcoming batch start date.`
+      );
+
+      window.open(`https://wa.me/9646004180?text=${text}`, '_blank');
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
     });
   </script>
 </body>
