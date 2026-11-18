@@ -3,223 +3,1277 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Courses Offered - Institute Website</title>
-  <link rel="stylesheet" href="courses.css" />
+  <title>Courses Offered & Fee Structure | NSD Computer Institute</title>
+  <meta name="description" content="Explore 28+ career-oriented computer courses at NSD Computer Institute. Web Designing, Python, Tally GST, ADCA, Graphic Designing, and Industrial Training with transparent fees." />
+  
+  <link rel="icon" type="image/png" href="logo.png" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <!-- AOS Animation -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Courses Stylesheet -->
+  <link rel="stylesheet" href="courses.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header data-aos="fade-down">
-    <div class="logo">
-      <img src="logo.png" alt="Institute Logo">
-      <h1>NSD Computer Institute</h1>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-badges">
+        <span class="top-badge-item">
+          <i class="fa-solid fa-award"></i>
+          <strong>ISO 9001:2015 Certified</strong> (INQ/PUN-7300/0821)
+        </span>
+        <span class="top-badge-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <strong>MSME Registered</strong> (UDYAM-PB-20-0014412)
+        </span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+919646004180"><i class="fa-solid fa-phone"></i> +91 9646004180</a>
+        <a href="mailto:navdeeprgniyd@gmail.com"><i class="fa-solid fa-envelope"></i> navdeeprgniyd@gmail.com</a>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="courses.html" class="active">Courses</a></li>
-        <li><a href="certificate.html">Certificate</a></li>
-      </ul>
-    </nav>
+  </div>
+
+  <!-- Main Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="NSD Computer Institute Home">
+        <img src="logo.png" alt="NSD Computer Institute Logo" />
+        <div class="logo-text">
+          <h1>NSD <span>Institute</span></h1>
+          <p>Centre of Excellence in IT</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html" class="active">Courses Offered</a></li>
+          <li><a href="certificate.html">Certificate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-cta">
+          <i class="fa-solid fa-user-graduate"></i>
+          <span>Enroll Now</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <div class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <!-- Courses Section -->
-  <section class="courses">
-    <h1 data-aos="fade-up">Our Courses</h1>
-    <div class="course-list">
-      <!-- Example course card -->
-      <div class="course-item" data-aos="fade-up" data-aos-delay="100">
-        <h2>Computer Basics (CF, Data entry operations, Internet)</h2>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <p><strong>Fees:</strong> Rs 800</p>
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Courses Offered</span>
+      </div>
+      <h1>Industry-Standard Technical Curriculum</h1>
+      <p>
+        Choose from over 28+ specialized courses designed for school students, college engineers, and working professionals with 100% practical lab practice and transparent pricing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Search Toolbar -->
+  <section class="container courses-toolbar-section">
+    <div class="courses-toolbar">
+      <div class="search-box-row">
+        <div class="search-input-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="courseSearch" class="search-input" placeholder="Search courses by keyword (e.g. Python, Web, Tally, ADCA, C++, Office)..." />
+        </div>
+        <div class="results-count" id="resultsCount">Showing 28 Courses</div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>MS Office (Excel, PowerPoint, Access, Troubleshooting)</h2>
-        <p><strong>Duration:</strong> 3 Months</p>
-        <p><strong>Fees:</strong> Rs 2100</p>
+      <div class="filter-pills" id="categoryFilters">
+        <button class="filter-btn active" data-category="all">All Programs (28)</button>
+        <button class="filter-btn" data-category="coding">Coding & Web</button>
+        <button class="filter-btn" data-category="design">Graphic Design</button>
+        <button class="filter-btn" data-category="diploma">Diplomas & Basics</button>
+        <button class="filter-btn" data-category="office">Office & Accounting</button>
+        <button class="filter-btn" data-category="college">College & Industrial</button>
+        <button class="filter-btn" data-category="school">School Tuition</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- All 28+ Courses Catalogue -->
+  <section class="container courses-container">
+    <div class="courses-grid" id="coursesGrid">
+
+      <!-- Course 1 -->
+      <div class="course-item-card" data-category="diploma" data-title="computer basics data entry operations internet">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-diploma">Foundation</span>
+          <h2>Computer Basics (CF, Data Entry & Internet)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-solid fa-keyboard"></i> Practical Typing</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Fundamental computer operational training for beginners covering operating system basics and rapid data entry.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Computer Fundamentals & Windows OS</li>
+            <li><i class="fa-solid fa-circle-check"></i> English & Regional Typing Practice</li>
+            <li><i class="fa-solid fa-circle-check"></i> Web Browsing & Email Operations</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹800</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Computer%20Basics%20(₹800)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Computer Fundamentals, Internet, MS Office</h2>
-        <p><strong>Duration:</strong> 4 Months</p>
-        <p><strong>Fees:</strong> Rs 2800</p>
+      <!-- Course 2 -->
+      <div class="course-item-card" data-category="office" data-title="ms office excel powerpoint access troubleshooting word">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-office">Office Productivity</span>
+          <h2>MS Office Comprehensive Suite</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+            <span><i class="fa-solid fa-file-excel"></i> 4 Core Tools</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>In-depth corporate training on Microsoft Word, Excel formulas, PowerPoint presentations, and Access databases.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> MS Word Document Formatting</li>
+            <li><i class="fa-solid fa-circle-check"></i> MS Excel Formulas, Pivot Tables & VLOOKUP</li>
+            <li><i class="fa-solid fa-circle-check"></i> MS PowerPoint & Access Database</li>
+            <li><i class="fa-solid fa-circle-check"></i> PC Troubleshooting & File Management</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹2,100</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20MS%20Office%20(₹2100)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Internet</h2>
-        <p><strong>Duration:</strong> 1 Week</p>
-        <p><strong>Fees:</strong> Rs 500</p>
+      <!-- Course 3 -->
+      <div class="course-item-card" data-category="office" data-title="computer fundamentals internet ms office master">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-office">Office + Internet</span>
+          <h2>Computer Fundamentals, Internet & MS Office</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 4 Months</span>
+            <span><i class="fa-solid fa-award"></i> Comprehensive</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>A balanced 4-month program mastering computer theory, modern internet workflows, and complete MS Office suite.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Hardware & Software Fundamentals</li>
+            <li><i class="fa-solid fa-circle-check"></i> MS Word, Excel, PowerPoint & Access</li>
+            <li><i class="fa-solid fa-circle-check"></i> Cloud Drive, Emailing & Digital Portals</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹2,800</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Fundamentals%20+%20MS%20Office%20(₹2800)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Computer Basics using Data Entry Operation</h2>
-        <p><strong>Duration:</strong> 2 Months</p>
-        <p><strong>Fees:</strong> Rs 1500</p>
+      <!-- Course 4 -->
+      <div class="course-item-card" data-category="diploma" data-title="internet web browsing email search cyber safety">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-diploma">Quick Skill</span>
+          <h2>Internet & Digital Communication</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Week</span>
+            <span><i class="fa-solid fa-globe"></i> Fast Track</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Express module teaching search engines, government portal submissions, cyber safety, and digital payments.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Effective Web Search Techniques</li>
+            <li><i class="fa-solid fa-circle-check"></i> Email Management & Attachments</li>
+            <li><i class="fa-solid fa-circle-check"></i> Safe Online Banking & Digital Portals</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹500</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Internet%20Course%20(₹500)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Website Designing(Photoshop, Corel Draw, HTML, DW, Flash, Java script)</h2>
-        <p><strong>Duration:</strong> 5 Months</p>
-        <p><strong>Fees:</strong> Rs 4000</p>
+      <!-- Course 5 -->
+      <div class="course-item-card" data-category="office" data-title="computer basics using data entry operation typing speed">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-office">Job Skill</span>
+          <h2>Computer Basics Using Data Entry Operation</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+            <span><i class="fa-solid fa-file-lines"></i> High Accuracy</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Specially customized for back-office jobs, government clerical tests, and professional data entry operators.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Touch Typing with 35+ WPM Target</li>
+            <li><i class="fa-solid fa-circle-check"></i> Excel Spreadsheets & Data Cleaning</li>
+            <li><i class="fa-solid fa-circle-check"></i> Online Form Fill-ups & Validation</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,500</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Data%20Entry%20Operation%20(₹1500)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>HTML</h2>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <p><strong>Fees:</strong> Rs 1000</p>
+      <!-- Course 6 -->
+      <div class="course-item-card" data-category="coding" data-title="website designing photoshop corel draw html dreamweaver flash javascript">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Web Development</span>
+          <h2>Website Designing (Photoshop, HTML, JS, Flash)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 5 Months</span>
+            <span><i class="fa-solid fa-code"></i> Complete Stack</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Our comprehensive frontend design program teaching visual branding, vector graphics, HTML5, and JavaScript.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Photoshop & CorelDraw Graphics</li>
+            <li><i class="fa-solid fa-circle-check"></i> HTML5 Semantic Structure & CSS3</li>
+            <li><i class="fa-solid fa-circle-check"></i> JavaScript Logic & Dynamic Web Forms</li>
+            <li><i class="fa-solid fa-circle-check"></i> Complete Website Project Delivery</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹4,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Website%20Designing%20(₹4000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Adobe Photoshop CS6</h2>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <p><strong>Fees:</strong> Rs 1000</p>
+      <!-- Course 7 -->
+      <div class="course-item-card" data-category="coding" data-title="html html5 tags forms tables layout">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Web Foundation</span>
+          <h2>HTML & Semantic Web Markup</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-brands fa-html5"></i> Web Base</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Learn the core structural language of the web. Perfect for students starting their journey into web creation.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> HTML5 Tags, Headers & Structure</li>
+            <li><i class="fa-solid fa-circle-check"></i> Forms, Input Controls & Validations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Tables, Lists & Media Embedding</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20HTML%20Course%20(₹1000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Flash</h2>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <p><strong>Fees:</strong> Rs 1000</p>
+      <!-- Course 8 -->
+      <div class="course-item-card" data-category="design" data-title="adobe photoshop cs6 photo editing retouching layers masking">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-design">Design Suite</span>
+          <h2>Adobe Photoshop CS6 Masterclass</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-solid fa-image"></i> Digital Art</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Hands-on photo manipulation, background removal, color grading, social media banner creation, and digital retouching.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Tools, Selections & Layer Masks</li>
+            <li><i class="fa-solid fa-circle-check"></i> Portrait Retouching & Color Correction</li>
+            <li><i class="fa-solid fa-circle-check"></i> Marketing Posters & Social Media Ads</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Adobe%20Photoshop%20(₹1000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Corel Draw</h2>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <p><strong>Fees:</strong> Rs 1000</p>
+      <!-- Course 9 -->
+      <div class="course-item-card" data-category="design" data-title="flash 2d animation timeline keyframes motion tween">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-design">Animation</span>
+          <h2>2D Animation & Motion Graphic Basics (Flash)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-solid fa-film"></i> Keyframing</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Explore timeline-based keyframing, shape tweens, character movements, and interactive animation concepts.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Timeline, Layers & Keyframes</li>
+            <li><i class="fa-solid fa-circle-check"></i> Motion & Shape Tweening</li>
+            <li><i class="fa-solid fa-circle-check"></i> Interactive Buttons & ActionScript Basics</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Flash%20Animation%20(₹1000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Graphic Designing</h2>
-        <p><strong>Duration:</strong> 2 Months</p>
-        <p><strong>Fees:</strong> Rs 2000</p>
+      <!-- Course 10 -->
+      <div class="course-item-card" data-category="design" data-title="corel draw vector logos branding print flex banner">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-design">Vector Graphics</span>
+          <h2>CorelDraw Commercial Vector Graphics</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-solid fa-bezier-curve"></i> Print Design</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Master vector illustration for commercial print media, visiting cards, flex banners, pamphlets, and corporate logos.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Pen Tool, Shaping & Bézier Curves</li>
+            <li><i class="fa-solid fa-circle-check"></i> Typography & Color Separation</li>
+            <li><i class="fa-solid fa-circle-check"></i> Flex Banners, Letterheads & Logo Creation</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20CorelDraw%20(₹1000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Website Development(Asp or PHP, SQL, Java script)</h2>
-        <p><strong>Duration:</strong> 3 Months</p>
-        <p><strong>Fees:</strong> Rs 3000</p>
+      <!-- Course 11 -->
+      <div class="course-item-card" data-category="design" data-title="graphic designing complete photoshop corel draw combo">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-design">Professional Design</span>
+          <h2>Graphic Designing Professional Diploma</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+            <span><i class="fa-solid fa-palette"></i> Photoshop + Corel</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Combined powerhouse module pairing Photoshop bitmap magic with CorelDraw vector precision for advertising careers.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Complete Photoshop CS6 & CorelDraw</li>
+            <li><i class="fa-solid fa-circle-check"></i> Brand Identity & Packaging Concepts</li>
+            <li><i class="fa-solid fa-circle-check"></i> Commercial Printing Guidelines & Export</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹2,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Graphic%20Designing%20(₹2000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>C</h2>
-        <p><strong>Duration:</strong> 1.5 Months</p>
-        <p><strong>Fees:</strong> Rs 1500</p>
+      <!-- Course 12 -->
+      <div class="course-item-card" data-category="coding" data-title="website development asp php sql java script backend database">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Backend & DB</span>
+          <h2>Website Development (ASP / PHP, SQL & JS)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+            <span><i class="fa-solid fa-database"></i> Dynamic Web</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Develop data-driven web applications with server-side processing, database schemas, and client validation.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Server Architecture & PHP / ASP Fundamentals</li>
+            <li><i class="fa-solid fa-circle-check"></i> SQL Database CRUD Operations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Authentication & User Session Management</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹3,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Website%20Development%20(₹3000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>C++</h2>
-        <p><strong>Duration:</strong> 1.5 Months</p>
-        <p><strong>Fees:</strong> Rs 1500</p>
+      <!-- Course 13 -->
+      <div class="course-item-card" data-category="coding" data-title="c programming language pointers arrays structures logic">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Core Programming</span>
+          <h2>C Programming Language</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1.5 Months</span>
+            <span><i class="fa-solid fa-terminal"></i> Logic Building</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>The mother of all modern programming languages. Build rigorous algorithmic thinking, memory management, and logic.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Data Types, Conditionals & Loops</li>
+            <li><i class="fa-solid fa-circle-check"></i> Functions, Recursion & Arrays</li>
+            <li><i class="fa-solid fa-circle-check"></i> Pointers, Structures & File I/O</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,500</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20C%20Programming%20(₹1500)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Visual Basic with SQL</h2>
-        <p><strong>Duration:</strong> 2 Months</p>
-        <p><strong>Fees:</strong> Rs 3000</p>
+      <!-- Course 14 -->
+      <div class="course-item-card" data-category="coding" data-title="c++ programming oop object oriented classes inheritance">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Object Oriented</span>
+          <h2>C++ with Object Oriented Programming</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1.5 Months</span>
+            <span><i class="fa-solid fa-cubes"></i> OOP Concepts</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Essential for BCA, B.Tech, and competitive coding. Master classes, objects, polymorphism, inheritance, and STL.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Classes, Objects & Constructors</li>
+            <li><i class="fa-solid fa-circle-check"></i> Inheritance, Polymorphism & Virtual Functions</li>
+            <li><i class="fa-solid fa-circle-check"></i> Templates & Exception Handling</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,500</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20C++%20Programming%20(₹1500)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Computer Hardware & Installation</h2>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <p><strong>Fees:</strong> Rs 1500</p>
+      <!-- Course 15 -->
+      <div class="course-item-card" data-category="coding" data-title="visual basic with sql database software forms">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Desktop Software</span>
+          <h2>Visual Basic with SQL Database</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+            <span><i class="fa-solid fa-window-maximize"></i> GUI Apps</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Create full Windows GUI business software applications with database connectivity, reports, and billing systems.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Visual Form Controls & Event Handling</li>
+            <li><i class="fa-solid fa-circle-check"></i> ADO / ODBC Database Connectivity</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bill Generation & Stock Management Project</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹3,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Visual%20Basic%20with%20SQL%20(₹3000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Industrial Training</h2>
-        <p><strong>Duration:</strong> 4/6 Weeks</p>
-        <p><strong>Fees:</strong> Rs 2000</p>
+      <!-- Course 16 -->
+      <div class="course-item-card" data-category="diploma" data-title="computer hardware installation assembly troubleshooting bios windows">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-diploma">Technical Support</span>
+          <h2>Computer Hardware & Installation</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-solid fa-screwdriver-wrench"></i> PC Repair</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Practical desktop PC assembly, motherboard components, RAM upgrades, Windows OS installation, and virus removal.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Motherboard, CPU, SMPS & Storage Assembly</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bootable USB & OS Installation</li>
+            <li><i class="fa-solid fa-circle-check"></i> Driver Setup & Diagnostic Troubleshooting</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,500</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Computer%20Hardware%20(₹1500)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Industrial Training</h2>
-        <p><strong>Duration:</strong> 6 Months</p>
-        <p><strong>Fees:</strong> Rs 6000</p>
+      <!-- Course 17 -->
+      <div class="course-item-card" data-category="college" data-title="industrial training short term 4 6 weeks bca btech project">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-college">Short Term Training</span>
+          <h2>Industrial Training (4 / 6 Weeks)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 4 - 6 Weeks</span>
+            <span><i class="fa-solid fa-briefcase"></i> Project Work</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Accelerated summer/winter training for diploma, BCA, and engineering students with project documentation.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Choice of Web, Python, or Database Track</li>
+            <li><i class="fa-solid fa-circle-check"></i> Practical Live Assignment Project</li>
+            <li><i class="fa-solid fa-circle-check"></i> Official Summer Training Certificate</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹2,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%204/6%20Weeks%20Industrial%20Training%20(₹2000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>JAVA</h2>
-        <p><strong>Duration:</strong> 2 Months</p>
-        <p><strong>Fees:</strong> Rs 3000</p>
+      <!-- Course 18 -->
+      <div class="course-item-card" data-category="college" data-title="industrial training semester 6 months bca btech mca live project">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-college">Semester Industrial</span>
+          <h2>Industrial Training (6 Months Mandatory)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 6 Months</span>
+            <span><i class="fa-solid fa-award"></i> Major Project</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Full final semester industrial project training required for BCA, MCA, and B.Tech degree completion.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Advanced Tech Stack (Python/FullStack/Java)</li>
+            <li><i class="fa-solid fa-circle-check"></i> Complete Major Project Development</li>
+            <li><i class="fa-solid fa-circle-check"></i> Synopsis, Daily Diary & Final Project Report</li>
+            <li><i class="fa-solid fa-circle-check"></i> Interview Preparation & ISO Verified Credential</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹6,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%206%20Months%20Industrial%20Training%20(₹6000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Tally</h2>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <p><strong>Fees:</strong> Rs 1500</p>
+      <!-- Course 19 -->
+      <div class="course-item-card" data-category="coding" data-title="java programming core java oop multithreading swing">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Enterprise Tech</span>
+          <h2>JAVA Core Programming</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+            <span><i class="fa-brands fa-java"></i> Enterprise Language</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Comprehensive Java fundamentals, robust object-oriented patterns, multithreading, collections, and Swing GUI.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> JVM Architecture & Core Syntax</li>
+            <li><i class="fa-solid fa-circle-check"></i> OOP, Interfaces & Abstract Classes</li>
+            <li><i class="fa-solid fa-circle-check"></i> Exception Handling, Multithreading & I/O</li>
+            <li><i class="fa-solid fa-circle-check"></i> JDBC Database Connectivity</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹3,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20JAVA%20Course%20(₹3000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>PHP with MySQL</h2>
-        <p><strong>Duration:</strong> 2 Months</p>
-        <p><strong>Fees:</strong> Rs 3000</p>
+      <!-- Course 20 -->
+      <div class="course-item-card" data-category="office" data-title="tally prime gst inventory accounting balance sheet vouchers">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-office">Accounting</span>
+          <h2>Tally with GST & Financial Accounting</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-solid fa-calculator"></i> Job Demand</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Direct vocational training in computerised accounting, journal entries, GST taxation, inventory, and final accounts.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Company Creation & Chart of Accounts</li>
+            <li><i class="fa-solid fa-circle-check"></i> GST Purchase/Sales Invoicing</li>
+            <li><i class="fa-solid fa-circle-check"></i> Balance Sheet, Trial Balance & Cash Flow</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹1,500</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Tally%20GST%20(₹1500)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Certificate In Computer Applications</h2>
-        <p><strong>Duration:</strong> 6 Months</p>
-        <p><strong>Fees:</strong> Rs 4800</p>
+      <!-- Course 21 -->
+      <div class="course-item-card" data-category="coding" data-title="php with mysql web development database backend">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Web Backend</span>
+          <h2>PHP with MySQL Database Development</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+            <span><i class="fa-brands fa-php"></i> Web DB</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Build real dynamic web applications with PHP script processing, relational MySQL tables, and secure sessions.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> PHP Syntax, Superglobals & Forms</li>
+            <li><i class="fa-solid fa-circle-check"></i> MySQL Database Design & Queries</li>
+            <li><i class="fa-solid fa-circle-check"></i> Student Management System Project</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹3,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20PHP%20with%20MySQL%20(₹3000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Certificate In Advanced Computer Applications</h2>
-        <p><strong>Duration:</strong> 1 Yr</p>
-        <p><strong>Fees:</strong> Rs 8400</p>
+      <!-- Course 22 -->
+      <div class="course-item-card" data-category="diploma" data-title="certificate in computer applications cca dca 6 months">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-diploma">Diploma Course</span>
+          <h2>Certificate In Computer Applications (CCA / DCA)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 6 Months</span>
+            <span><i class="fa-solid fa-graduation-cap"></i> Semi-Annual Diploma</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>A proven 6-month curriculum covering operating systems, complete MS Office, basic accounting, and internet utilities.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Computer Fundamentals & Windows</li>
+            <li><i class="fa-solid fa-circle-check"></i> MS Office Suite Mastery</li>
+            <li><i class="fa-solid fa-circle-check"></i> Internet, Email & Digital Security</li>
+            <li><i class="fa-solid fa-circle-check"></i> Basic Financial Accounting</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹4,800</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20CCA%20(6%20Months%20-₹4800)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>Python</h2>
-        <p><strong>Duration:</strong> 4 Months</p>
-        <p><strong>Fees:</strong> Rs 10,000</p>
+      <!-- Course 23 -->
+      <div class="course-item-card" data-category="diploma" data-title="certificate in advanced computer applications adca 1 year master diploma">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-diploma">Flagship 1-Year Diploma</span>
+          <h2>Certificate In Advanced Computer Applications (ADCA)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 1 Year</span>
+            <span><i class="fa-solid fa-trophy"></i> Master Diploma</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Our most popular professional diploma. Prepares you for IT administration, graphic designing, accounting, and web roles.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Complete Advanced MS Office & Excel</li>
+            <li><i class="fa-solid fa-circle-check"></i> Tally with GST Accounting</li>
+            <li><i class="fa-solid fa-circle-check"></i> Photoshop & CorelDraw Graphics</li>
+            <li><i class="fa-solid fa-circle-check"></i> HTML Web Design & Computer Hardware</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹8,400</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20ADCA%20(1%20Year%20-₹8400)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>CCC</h2>
-        <p><strong>Duration:</strong> 4 Months</p>
-        <p><strong>Fees:</strong> Rs 3200</p>
+      <!-- Course 24 -->
+      <div class="course-item-card" data-category="coding" data-title="python programming data structures automation scripts ai">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-coding">Modern Coding</span>
+          <h2>Python Programming Master Course</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 4 Months</span>
+            <span><i class="fa-brands fa-python"></i> High Demand</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>From core Python foundations to real automation scripts, object-oriented design, modules, and database applications.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Python Syntax, Data Types & Control Flow</li>
+            <li><i class="fa-solid fa-circle-check"></i> OOP, Classes & Methods</li>
+            <li><i class="fa-solid fa-circle-check"></i> File Handling, Modules & Regex</li>
+            <li><i class="fa-solid fa-circle-check"></i> Real Capstone Automation Project</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹10,000</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Python%20Course%20(₹10000)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>BCA & Btech</h2>
-        
-        <p><strong>Fees:</strong> Rs 1000 per month</p>
+      <!-- Course 25 -->
+      <div class="course-item-card" data-category="diploma" data-title="ccc course on computer concepts govt exam recognized">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-diploma">Govt. Job Essential</span>
+          <h2>CCC (Course on Computer Concepts)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> 4 Months</span>
+            <span><i class="fa-solid fa-landmark"></i> Exam Aligned</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Standardized computer concepts curriculum required for various Central & State government job applications.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Operating System & GUI Operations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Word Processing, Spreadsheet & Slides</li>
+            <li><i class="fa-solid fa-circle-check"></i> Digital Financial Services & Cyber Awareness</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Total Course Fee</span>
+            <span class="fee-val">₹3,200</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20CCC%20Course%20(₹3200)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>All Subjects</h2>
-        <p><strong>Class 6 to 8</strong></p>
-        <p><strong>Fees:</strong> Rs 6000 annually</p>
+      <!-- Course 26 -->
+      <div class="course-item-card" data-category="college" data-title="bca btech college university subject coaching tuition">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-college">Degree Coaching</span>
+          <h2>BCA & B.Tech Subject Coaching</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> Monthly Regular</span>
+            <span><i class="fa-solid fa-user-graduate"></i> University Syllabus</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Personalized semester subject coaching for undergraduate computer science, BCA, and engineering students.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Programming in C, C++, Java & Python</li>
+            <li><i class="fa-solid fa-circle-check"></i> Data Structures, Algorithms & DBMS</li>
+            <li><i class="fa-solid fa-circle-check"></i> Exam Preparation & Previous Year Papers</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Tuition Fee</span>
+            <span class="fee-val">₹1,000 / mo</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20BCA%20&%20BTech%20Coaching." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      <div class="course-item" data-aos="fade-up" data-aos-delay="150">
-        <h2>All Subjects</h2>
-        <p><strong>Class 9 to 10</strong></p>
-        <p><strong>Fees:</strong> Rs 8500 annually</p>
+      <!-- Course 27 -->
+      <div class="course-item-card" data-category="school" data-title="all subjects class 6 to 8 mathematics science english school coaching">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-school">School Academic</span>
+          <h2>All Subjects Coaching (Class 6th to 8th)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> Annual Academic Year</span>
+            <span><i class="fa-solid fa-book"></i> All School Boards</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Mentored academic foundation for middle school students with dedicated focus on Mathematics and Science.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> Mathematics, Science, English & Social Studies</li>
+            <li><i class="fa-solid fa-circle-check"></i> Daily Homework & Weekly Assessment Tests</li>
+            <li><i class="fa-solid fa-circle-check"></i> 13+ Years Specialized Mentorship by Director</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Annual Tuition Fee</span>
+            <span class="fee-val">₹6,000 / yr</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Class%206-8%20Coaching%20(₹6000/yr)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
-      
+      <!-- Course 28 -->
+      <div class="course-item-card" data-category="school" data-title="all subjects class 9 to 10 board exams mathematics science tuition">
+        <div class="course-card-top">
+          <span class="course-category-badge cat-school">Board Exam Prep</span>
+          <h2>All Subjects Coaching (Class 9th to 10th)</h2>
+          <div class="course-details-row">
+            <span><i class="fa-regular fa-clock"></i> Annual Academic Year</span>
+            <span><i class="fa-solid fa-medal"></i> Board Scoring</span>
+          </div>
+        </div>
+        <div class="course-card-middle">
+          <p>Rigorous secondary school board examination coaching designed to produce 90%+ academic excellence.</p>
+          <ul class="course-key-points">
+            <li><i class="fa-solid fa-circle-check"></i> High-Scoring Mathematics & Science Focus</li>
+            <li><i class="fa-solid fa-circle-check"></i> Sample Papers & Board Mock Tests</li>
+            <li><i class="fa-solid fa-circle-check"></i> Concept Clarity & Individual Attention</li>
+          </ul>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-fee-block">
+            <span class="fee-sub">Annual Tuition Fee</span>
+            <span class="fee-val">₹8,500 / yr</span>
+          </div>
+          <a href="https://wa.me/9646004180?text=Hello%20NSD!%20I%20am%20interested%20in%20Class%209-10%20Coaching%20(₹8500/yr)." target="_blank" class="btn-enroll-action">
+            <span>Enquire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
 
     </div>
   </section>
 
+  <!-- Admission Steps -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How To Join</span>
+        <h2 class="section-title">4 Simple Steps to Begin Your Learning</h2>
+        <p class="section-subtitle">
+          Getting started at NSD Computer Institute is transparent, welcoming, and fast.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h4>Free Consultation</h4>
+          <p>Discuss your career background with our expert counselors and choose the program that aligns with your ambition.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <h4>Select Your Batch</h4>
+          <p>Choose flexible morning, afternoon, or evening batches that fit seamlessly with your school or college timings.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h4>Hands-on Training</h4>
+          <p>Practice daily on your dedicated lab workstation with direct guidance, real-world projects, and code evaluations.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h4>Get Certified</h4>
+          <p>Pass your final practical assessment and receive your ISO 9001:2015 & MSME registered Course Completion Certificate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Common Queries</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about course admissions, fee structures, and certifications.
+        </p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Can I pay course fees in installments?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! For all medium and long-term courses (such as ADCA, CCA, 6 Months Industrial Training, Python, and annual tuitions), we provide easy monthly installment options with zero hidden interest to ensure financial convenience for every student.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you provide demo classes before admission?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. We invite students to attend 1 to 2 free demonstration and interaction sessions to experience our teaching methodology, inspect our computer lab facilities, and meet the faculty before finalizing admission.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is the NSD certificate valid for government jobs?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, our institute is registered under the Ministry of MSME, Govt. of India (UDYAM-PB-20-0014412) and holds an official ISO 9001:2015 Certification (INQ/PUN-7300/0821). Our certificates are widely recognized across government document verifications and private sector job applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What if I miss a lecture due to exams or illness?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We maintain flexible makeup slots and dedicated doubt-clearing sessions every Saturday so students who missed classes can easily cover their syllabus without lagging behind their batch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 NSD Institute</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="logo.png" alt="NSD Logo" />
+            <div class="logo-text">
+              <h1>NSD <span>Institute</span></h1>
+              <p>Centre of Excellence in IT</p>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            NSD Computer Institute is a fast-growing educational organization dedicated to vocational and industrial technical training, nurturing future-ready professionals since 2021.
+          </p>
+          <div class="footer-accreditation-chips">
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-stamp"></i>
+              <span>ISO 9001:2015 Certified (INQ/PUN-7300/0821)</span>
+            </div>
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-landmark"></i>
+              <span>Govt. MSME Reg. (UDYAM-PB-20-0014412)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Institute</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> All Courses & Fees</a></li>
+            <li><a href="certificate.html"><i class="fa-solid fa-angle-right"></i> Verify Certificate</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Courses</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Web Designing (5 Months)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Python Programming</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> ADCA Diploma (1 Year)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Tally Prime with GST</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Graphic Designing</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Industrial Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Helpline</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone Support:</strong><br />
+                <a href="tel:+919646004180">+91 9646004180</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email Address:</strong><br />
+                <a href="mailto:navdeeprgniyd@gmail.com">navdeeprgniyd@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Centre Timings:</strong><br />
+                Mon - Sat: 8:00 AM - 7:30 PM<br />
+                Sunday: By Prior Appointment
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2021 - 2026 NSD Computer Institute. All Rights Reserved.</p>
+        <p>ISO 9001:2015 & MSME Certified Vocational Training Centre.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- AOS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Floating Utilities -->
+  <a href="https://wa.me/9646004180?text=Hello%20NSD%20Computer%20Institute!%20I%20am%20interested%20in%20taking%20admission." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-back-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Interactive JavaScript for Live Filter, Search, and FAQs -->
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true
+    // Header & Back to top
+    const header = document.getElementById('header');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+        backToTop.classList.add('show');
+      } else {
+        header.classList.remove('scrolled');
+        backToTop.classList.remove('show');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Hamburger Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Live Search and Category Filter Logic
+    const searchInput = document.getElementById('courseSearch');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const courseCards = document.querySelectorAll('.course-item-card');
+    const resultsCount = document.getElementById('resultsCount');
+
+    let currentCategory = 'all';
+
+    function filterCourses() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      courseCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const titleAndTags = card.getAttribute('data-title').toLowerCase();
+        const cardText = card.innerText.toLowerCase();
+
+        const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+        const matchesSearch = !searchTerm || titleAndTags.includes(searchTerm) || cardText.includes(searchTerm);
+
+        if (matchesCategory && matchesSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      resultsCount.textContent = `Showing ${visibleCount} Course${visibleCount === 1 ? '' : 's'}`;
+    }
+
+    // Category button clicks
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.getAttribute('data-category');
+        filterCourses();
+      });
+    });
+
+    // Search input typing
+    searchInput.addEventListener('input', filterCourses);
+
+    // FAQ Accordion Toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
     });
   </script>
 </body>
