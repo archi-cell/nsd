@@ -1,153 +1,930 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NSD Computer Institute</title>
+  <title>NSD Computer Institute | Premier Technical Education & Skill Development</title>
+  <meta name="description" content="NSD Computer Institute - ISO 9001:2015 Certified & MSME Registered Institute offering professional computer courses, web designing, python, accounting, and industrial training in Punjab." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
-
 <body>
 
-  <!-- Header -->
-  <header class="main-header">
-    <div class="container header-container">
-      <div class="logo">
-        <img src="logo.png" alt="NSD Logo" />
-        <h1>NSD Institute</h1>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-badges">
+        <span class="top-badge-item">
+          <i class="fa-solid fa-award"></i>
+          <strong>ISO 9001:2015 Certified</strong> (INQ/PUN-7300/0821)
+        </span>
+        <span class="top-badge-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <strong>MSME Registered</strong> (UDYAM-PB-20-0014412)
+        </span>
       </div>
-      <nav>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="courses.html">Courses</a></li>
-    <li><a href="certificate.html">Certificate</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    <li><a href="form.html">Student Form</a></li>
-  </ul>
-  <!-- Hamburger icon -->
-  <div class="menu-icon" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
+      <div class="top-contact">
+        <a href="tel:+919646004180"><i class="fa-solid fa-phone"></i> +91 9646004180</a>
+        <a href="mailto:navdeeprgniyd@gmail.com"><i class="fa-solid fa-envelope"></i> navdeeprgniyd@gmail.com</a>
+      </div>
+    </div>
   </div>
-</nav>
 
+  <!-- Main Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="NSD Computer Institute Home">
+        <img src="logo.png" alt="NSD Computer Institute Logo" />
+        <div class="logo-text">
+          <h1>NSD <span>Institute</span></h1>
+          <p>Centre of Excellence in IT</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses Offered</a></li>
+          <li><a href="certificate.html">Certificate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-cta">
+          <i class="fa-solid fa-user-graduate"></i>
+          <span>Enroll Now</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <div class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section" >
+  <section class="hero-section">
     <div class="container">
-      <h2 id="typed-text"></h2>
-      <p>Boost your computer skills with industry-standard programs.</p>
-      <div class="certifications">
-        <p><strong>Registered under MSME</strong> (UDYAM-PB-20-0014412)</p>
-        <p><strong>ISO 9001 Certified</strong> (INQ/PUN-7300/0821)</p>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Govt. Recognized Technical Education Since 2021</span>
+          </div>
+          <h1 class="hero-title">
+            Build Your Tech Career With <br />
+            <span class="typed-container" id="typedElement"></span><span class="typing-cursor"></span>
+          </h1>
+          <p class="hero-desc">
+            Empowering youth and professionals with hands-on computer education, certified industrial training, and job-oriented technical programs led by senior industry faculties with 20+ years of training mastery.
+          </p>
+
+          <div class="hero-actions">
+            <a href="courses.html" class="btn-primary">
+              <span>Explore All Courses</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="certificate.html" class="btn-secondary">
+              <i class="fa-solid fa-shield-check"></i>
+              <span>Verify Certificate</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-badge-item">
+              <div class="trust-badge-icon">
+                <i class="fa-solid fa-check-double"></i>
+              </div>
+              <div class="trust-badge-text">
+                <strong>100% Practical Labs</strong>
+                <span>Individual Workstations</span>
+              </div>
+            </div>
+            <div class="trust-badge-item">
+              <div class="trust-badge-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="trust-badge-text">
+                <strong>4,000+ Alumni</strong>
+                <span>Trained & Employed</span>
+              </div>
+            </div>
+            <div class="trust-badge-item">
+              <div class="trust-badge-icon">
+                <i class="fa-solid fa-stamp"></i>
+              </div>
+              <div class="trust-badge-text">
+                <strong>ISO 9001:2015</strong>
+                <span>Certified Curriculum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <img src="institute.jpg" alt="NSD Computer Institute Campus and Lab Facility" class="hero-main-img" />
+            
+            <!-- Floating Achievement Pill Top Right -->
+            <!-- <div class="hero-floating-card card-right">
+              <div class="floating-icon gold">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="floating-text">
+                <strong>4.9 / 5 Rating</strong>
+                <span>Top Rated Computer Center</span>
+              </div>
+            </div> -->
+
+            <!-- Floating Achievement Pill Bottom Left -->
+            <div class="hero-floating-card card-left">
+              <div class="floating-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="floating-text">
+                <strong>Industry Ready</strong>
+                <span>Project Based Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <a href="courses.html" class="cta-btn">Explore Courses</a>
     </div>
   </section>
 
-  <!-- Institute Showcase -->
-  <section class="institute-showcase" data-aos="zoom-in">
+  <!-- Key Statistics Bar -->
+  <section class="stats-section">
     <div class="container">
-      <h2>Our Institute</h2>
-      <img src="institute.jpg" alt="NSD Institute" class="institute-image">
+      <div class="stats-card-wrap">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <div class="stat-details">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Years Faculty Experience</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <div class="stat-details">
+            <div class="stat-number">4,000+</div>
+            <div class="stat-label">Students Trained</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </div>
+          <div class="stat-details">
+            <div class="stat-number">28+</div>
+            <div class="stat-label">Technical Courses</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="stat-details">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Govt. Verified Certificates</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Director Message -->
-  <section class="student-note-section" data-aos="fade-left">
+  <!-- Why Choose NSD Institute -->
+  <section class="section-padding">
     <div class="container">
-      <h2>From the Managing Director</h2>
-      <blockquote>
-        <p>
-          Welcome to NSD Coaching Institute. My motto is to help every youth realize their potential and become a
-          winner.
-          I, Navdeep Singh Dadhwal, have trained over 4000+ students through government skill initiatives and
-          professional courses.
+      <div class="section-header">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">The NSD Advantage for Every Aspiring Student</h2>
+        <p class="section-subtitle">
+          We combine government-certified standards, personal mentorship, and modern practical infrastructure to deliver unmatched learning outcomes.
         </p>
-        <p>
-          NSD is committed to affordable, accessible and high-quality technical education. Let us help shape your
-          career.
-        </p>
-        <footer>- Navdeep Singh Dadhwal</footer>
-      </blockquote>
-    </div>
+      </div>
 
-    <div class="container">
-      <h2>Our Vision</h2>
-      <blockquote>
-        <p>We envision a future where excellence knows no bounds. We aspire to be the catalysts of change, shaping a tomorrow where individuals are equipped with the skills, knowledge, and mindset to conquer challenges and embrace limitless possibilities. Our vision is a world where every person can realise their true potential and contribute to building a brighter, more prosperous future for all.</p>
-        
-      </blockquote>
+      <div class="why-us-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h3>1-on-1 Practical Workstations</h3>
+          <p>
+            No sharing or theoretical cramming. Every student gets a dedicated, modern desktop PC with all required professional software pre-configured.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3>20+ Years Mentorship</h3>
+          <p>
+            Learn directly under senior faculty with background at Commonwealth International Organization and Rajiv Gandhi National Institute (RGNIYD).
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-id-card-clip"></i>
+          </div>
+          <h3>ISO 9001 & MSME Certified</h3>
+          <p>
+            All course completion certificates are fully verified, embossed with ISO and MSME registration numbers, accepted widely in private and public sectors.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+          <h3>Affordable & Installment Fees</h3>
+          <p>
+            Quality technical education made accessible with transparent, budget-friendly pricing and flexible installment schemes for every student.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3>Flexible Morning & Evening Batches</h3>
+          <p>
+            Convenient scheduling tailored for school students, college undergraduates (BCA/B.Tech), and working professionals seeking to upskill.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3>Job-Ready Industrial Training</h3>
+          <p>
+            Comprehensive 4/6-week and 6-month live project training aligned with National Skill Development Corporation (NSDC) and PMKVY standards.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Popular Courses Showcase -->
+  <section class="section-padding courses-showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Programs</span>
+        <h2 class="section-title">Most Popular Career Programs</h2>
+        <p class="section-subtitle">
+          Designed according to contemporary workplace requirements with comprehensive hands-on practice.
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <div class="course-card">
+          <div class="course-card-header">
+            <span class="course-category-tag tag-tech">Web & Coding</span>
+            <h3>Website Designing & Frontend Development</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 Months</span>
+              <span><i class="fa-solid fa-layer-group"></i> 6 Modules</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p>Master end-to-end web building skills from visual layout to interactive code.</p>
+            <ul class="course-topics-list">
+              <li><i class="fa-solid fa-circle-check"></i> HTML5, CSS3 & Responsive UI</li>
+              <li><i class="fa-solid fa-circle-check"></i> JavaScript Interactive Logic</li>
+              <li><i class="fa-solid fa-circle-check"></i> Adobe Photoshop & CorelDraw</li>
+              <li><i class="fa-solid fa-circle-check"></i> Live Portfolio Project</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee">
+              <span class="fee-label">Total Fee</span>
+              <span class="fee-amount">₹4,000</span>
+            </div>
+            <a href="courses.html" class="btn-card-enroll">
+              <span>Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <div class="course-card-header">
+            <span class="course-category-tag tag-diploma">Diploma</span>
+            <h3>Certificate in Advanced Computer Applications (ADCA)</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 1 Year</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> Complete Suite</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p>Our flagship 1-year master diploma covering office productivity, web tools, and database fundamentals.</p>
+            <ul class="course-topics-list">
+              <li><i class="fa-solid fa-circle-check"></i> Advanced MS Office & Excel Mastery</li>
+              <li><i class="fa-solid fa-circle-check"></i> Tally with GST Accounting</li>
+              <li><i class="fa-solid fa-circle-check"></i> Web Basics, HTML & Graphics</li>
+              <li><i class="fa-solid fa-circle-check"></i> Hardware & Software Maintenance</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee">
+              <span class="fee-label">Total Fee</span>
+              <span class="fee-amount">₹8,400</span>
+            </div>
+            <a href="courses.html" class="btn-card-enroll">
+              <span>Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+          <div class="course-card-header">
+            <span class="course-category-tag tag-tech">Programming</span>
+            <h3>Python Programming for Beginners & Pros</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 Months</span>
+              <span><i class="fa-solid fa-code"></i> Project Based</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p>Learn the world's most versatile programming language with industry project applications.</p>
+            <ul class="course-topics-list">
+              <li><i class="fa-solid fa-circle-check"></i> Core Python Syntax & Logic</li>
+              <li><i class="fa-solid fa-circle-check"></i> OOP Concepts & Data Structures</li>
+              <li><i class="fa-solid fa-circle-check"></i> File Handling & Automation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Capstone Coding Project</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee">
+              <span class="fee-label">Total Fee</span>
+              <span class="fee-amount">₹10,000</span>
+            </div>
+            <a href="courses.html" class="btn-card-enroll">
+              <span>Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+          <div class="course-card-header">
+            <span class="course-category-tag tag-office">Finance & Accounting</span>
+            <h3>Tally Prime with GST & Financial Accounting</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+              <span><i class="fa-solid fa-calculator"></i> Accounting</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p>Gain fast-track expertise in modern business accounting, voucher entries, and tax computations.</p>
+            <ul class="course-topics-list">
+              <li><i class="fa-solid fa-circle-check"></i> Ledger Creation & Inventory Control</li>
+              <li><i class="fa-solid fa-circle-check"></i> GST Invoicing & Tax Calculation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Balance Sheet & Profit/Loss Reports</li>
+              <li><i class="fa-solid fa-circle-check"></i> Real-World Practice Cases</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee">
+              <span class="fee-label">Total Fee</span>
+              <span class="fee-amount">₹1,500</span>
+            </div>
+            <a href="courses.html" class="btn-card-enroll">
+              <span>Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card">
+          <div class="course-card-header">
+            <span class="course-category-tag tag-design">Creative Arts</span>
+            <h3>Graphic Designing (Photoshop & CorelDraw)</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+              <span><i class="fa-solid fa-palette"></i> Design Suite</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p>Unleash your creative skills for branding, social media marketing graphics, and commercial printing.</p>
+            <ul class="course-topics-list">
+              <li><i class="fa-solid fa-circle-check"></i> Vector Art with CorelDraw</li>
+              <li><i class="fa-solid fa-circle-check"></i> Photo Retouching & Effects</li>
+              <li><i class="fa-solid fa-circle-check"></i> Logo, Banner & Poster Design</li>
+              <li><i class="fa-solid fa-circle-check"></i> Portfolio Preparation</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee">
+              <span class="fee-label">Total Fee</span>
+              <span class="fee-amount">₹2,000</span>
+            </div>
+            <a href="courses.html" class="btn-card-enroll">
+              <span>Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card">
+          <div class="course-card-header">
+            <span class="course-category-tag tag-diploma">College Training</span>
+            <h3>Industrial Training for BCA & B.Tech</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 Months</span>
+              <span><i class="fa-solid fa-microchip"></i> Full Semester</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p>Comprehensive mandatory semester industrial training with live project mentorship and documentation.</p>
+            <ul class="course-topics-list">
+              <li><i class="fa-solid fa-circle-check"></i> Choice of Tech Stack (Web/Python/DB)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Live Project Development</li>
+              <li><i class="fa-solid fa-circle-check"></i> Project Synopsis & Report Assistance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Industrial Experience Certificate</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee">
+              <span class="fee-label">Total Fee</span>
+              <span class="fee-amount">₹6,000</span>
+            </div>
+            <a href="courses.html" class="btn-card-enroll">
+              <span>Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta-wrap">
+        <a href="courses.html" class="btn-primary">
+          <span>View All 28+ Courses & Fee Chart</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Infrastructure Showcase -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="campus-grid">
+        <div class="campus-images">
+          <div class="campus-img-box">
+            <img src="institute.jpg" alt="NSD Campus Building Exterior" />
+            <div class="campus-img-caption">
+              <i class="fa-solid fa-location-dot"></i> Campus Entrance & Facility
+            </div>
+          </div>
+          <div class="campus-img-box">
+            <img src="centre.jpg" alt="NSD Modern Computer Classroom Lab" />
+            <div class="campus-img-caption">
+              <i class="fa-solid fa-desktop"></i> Modern Computer Lab
+            </div>
+          </div>
+        </div>
+
+        <div class="campus-content">
+          <span class="section-tag">State-of-the-Art Infrastructure</span>
+          <h2>A Focused Learning Space Built for Real-World Competence</h2>
+          <p>
+            At NSD Computer Institute, our students learn in an air-conditioned, well-equipped computer laboratory designed to give you direct, uninterrupted practice. We maintain industry-grade hardware and software setups so you transition smoothly into any corporate or government workstation.
+          </p>
+
+          <div class="facility-checklist">
+            <div class="facility-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>High-Speed Optical Broadband</span>
+            </div>
+            <div class="facility-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Modern Desktop Workstations</span>
+            </div>
+            <div class="facility-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Interactive Digital Display</span>
+            </div>
+            <div class="facility-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Power Backup UPS Systems</span>
+            </div>
+            <div class="facility-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Dedicated Doubt-Clearing Hours</span>
+            </div>
+            <div class="facility-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Comfortable Ergonomic Seating</span>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn-primary">
+            <span>Learn More About Our Journey</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Director's Desk Section -->
+  <section class="section-padding director-section">
+    <div class="container">
+      <div class="director-grid">
+        <div class="director-card-visual">
+          <div class="director-avatar-wrap">
+            <img src="navdeep.jpg" alt="Navdeep Singh Dadhwal - Managing Director NSD" />
+          </div>
+          <h3>Navdeep Singh Dadhwal</h3>
+          <div class="director-designation">Founder & Managing Director</div>
+          <div class="director-affiliations">
+            <span><i class="fa-solid fa-award"></i> 20+ Years Govt. Recognized Training</span>
+            <span><i class="fa-solid fa-globe"></i> Former ICT Officer, Commonwealth</span>
+            <span><i class="fa-solid fa-landmark"></i> Senior Computer Faculty, RGNIYD</span>
+            <span><i class="fa-solid fa-user-check"></i> 4,000+ Students Mentored</span>
+          </div>
+        </div>
+
+        <div class="director-speech">
+          <span class="section-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--gold-light);">
+            From the Managing Director's Desk
+          </span>
+          <blockquote style="margin-top: 1.25rem;">
+            <span class="quote-mark">“</span>
+            Welcome to NSD Computer Institute. My lifelong motto is to help every youth realize their latent potential and become a winner in the digital world. I have dedicated over two decades to technical and vocational education, witnessing firsthand how the right computer skills can transform an individual's career and family prosperity.
+          </blockquote>
+          <blockquote style="font-size: 1.05rem; opacity: 0.95;">
+            At NSD, we are fiercely committed to affordable, accessible, and high-quality technical education. No student should be left behind due to prohibitive fees or lack of practical computers. Let us help shape your career.
+          </blockquote>
+
+          <div class="vision-card-mini">
+            <h4><i class="fa-solid fa-compass"></i> Our Driving Vision</h4>
+            <p>
+              We envision a future where technical excellence knows no bounds. We aspire to be the catalysts of change, equipping individuals with the skills, confidence, and mindset to conquer tomorrow's technological challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Verification Teaser -->
+  <section class="section-padding cert-teaser-section">
+    <div class="container">
+      <div class="cert-teaser-card">
+        <div class="cert-teaser-grid">
+          <div class="cert-teaser-content">
+            <span class="section-tag">Official Certification</span>
+            <h2>ISO 9001:2015 Verified Credentials That Open Doors</h2>
+            <p>
+              Upon completing any program at NSD Computer Institute, each student receives an authentic Certificate of Completion with unique verification registration credentials, registered under MSME, Govt. of India.
+            </p>
+
+            <div class="cert-features-row">
+              <div class="cert-feature-pill">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Tamper-Proof Hologram / Stamp</span>
+              </div>
+              <!-- <div class="cert-feature-pill">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>Online Verification Support</span>
+              </div> -->
+              <div class="cert-feature-pill">
+                <i class="fa-solid fa-file-signature"></i>
+                <span>Director Endorsed</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="certificate.html" class="btn-primary">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Verify Your Certificate Now</span>
+              </a>
+              <a href="contact.html" class="btn-secondary" style="background: #ffffff; color: var(--primary-navy); border-color: var(--border-light);">
+                <span>Enquire About Courses</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="cert-teaser-visual">
+            <div class="cert-preview-wrapper">
+              <span class="cert-verified-stamp">
+                <i class="fa-solid fa-badge-check"></i> ISO Verified
+              </span>
+              <img src="certificate.jpg" alt="NSD Course Completion Certificate Sample" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Student Success</span>
+        <h2 class="section-title">What Our Alumni Say About NSD</h2>
+        <p class="section-subtitle">
+          Real feedback from students who transformed their technical skills and built successful careers.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            "The NSD computer is good. I decided to join this computer class because it is very good, even though I didn't know how to use a computer. Then, the instructor helped me, and I started practicing daily. I come to class every day and learn something new from the computer center. This computer class is amazing, and I practice new concepts regularly... thankuu sir ..❤️"
+          </p>
+          <div class="testimonial-student">
+            <div class="student-avatar">R</div>
+            <div class="student-info">
+              <h4>Nikhil Pawar</h4>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            "No doubt, NSD computer Institute it best Institute in this region. Teaching method, topic details, live examples, weekly teat, market related assignment, soft skills, communication are the key factors of this centre, kindly visit this Institute to join the computer training.The focus is not only to provide the training but also to sharp your technical skills to get the job in industry."
+          </p>
+          <div class="testimonial-student">
+            <div class="student-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">P</div>
+            <div class="student-info">
+              <h4>Anjali Gusain</h4>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            "A nice computer institute to learn from scratch. Ibdid one year government and ISO recognised course from this institute.it provided the deep knowledge of each topic.now it boost my confident regarding the computer skill.Each student gets one on one attention and after topic, doubts are addressed very well and effectively."
+          </p>
+          <div class="testimonial-student">
+            <div class="student-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">A</div>
+            <div class="student-info">
+              <h4>Kiranjit Kaur</h4>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission CTA Banner -->
+  <section class="container cta-banner-section">
+    <div class="cta-banner-box">
+      <h2>Take The First Step Toward Your Tech Career Today</h2>
+      <p>
+        Admissions are open for new morning and evening batches. Get personalized career counselling and find the perfect course tailored to your goals.
+      </p>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn-primary" style="background: linear-gradient(135deg, var(--gold-primary), var(--gold-light)); color: var(--navy-dark); font-weight: 700;">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Apply For Admission</span>
+        </a>
+        <a href="https://wa.me/9646004180?text=Hello%20NSD%20Institute!%20I%20would%20like%20to%20know%20more%20about%20your%20courses." target="_blank" class="btn-secondary" style="border-color: #25d366; color: #ffffff;">
+          <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 1.2rem;"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2021 NSD Computer Institute. All rights reserved.</p>
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="logo.png" alt="NSD Logo" />
+            <div class="logo-text">
+              <h1>NSD <span>Institute</span></h1>
+              <p>Centre of Excellence in IT</p>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            NSD Computer Institute is a fast-growing educational organization dedicated to vocational and industrial technical training, nurturing future-ready professionals since 2021.
+          </p>
+          <div class="footer-accreditation-chips">
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-stamp"></i>
+              <span>ISO 9001:2015 Certified (INQ/PUN-7300/0821)</span>
+            </div>
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-landmark"></i>
+              <span>Govt. MSME Reg. (UDYAM-PB-20-0014412)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Institute</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> All Courses & Fees</a></li>
+            <li><a href="certificate.html"><i class="fa-solid fa-angle-right"></i> Verify Certificate</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Directions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Courses -->
+        <div class="footer-col">
+          <h4>Popular Courses</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Web Designing (5 Months)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Python Programming</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> ADCA Diploma (1 Year)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Tally Prime with GST</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Graphic Designing</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Industrial Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="footer-col">
+          <h4>Direct Helpline</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone Support:</strong><br />
+                <a href="tel:+919646004180">+91 9646004180</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email Address:</strong><br />
+                <a href="mailto:navdeeprgniyd@gmail.com">navdeeprgniyd@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Centre Timings:</strong><br />
+                Mon - Sat: 8:00 AM - 7:30 PM<br />
+                Sunday: By Prior Appointment
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2021 - 2026 NSD Computer Institute. All Rights Reserved.</p>
+        <p>ISO 9001:2015 & MSME Certified Vocational Training Centre.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- Floating Actions (WhatsApp & Back-to-Top) -->
+  <a href="https://wa.me/9646004180?text=Hello%20NSD%20Computer%20Institute!%20I%20am%20interested%20in%20taking%20admission." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-back-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Clean Vanilla JavaScript for Interactive UI -->
   <script>
-    function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("show");
-  }
+    // Sticky Header Scroll effect
+    const header = document.getElementById('header');
+    const backToTop = document.getElementById('backToTop');
 
-  </script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
-
-  <script>
-    const text = "Welcome to NSD Institute";
-    let i = 0;
-
-    function typeEffect() {
-      if (i < text.length) {
-        document.getElementById("typed-text").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 100);
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+        backToTop.classList.add('show');
+      } else {
+        header.classList.remove('scrolled');
+        backToTop.classList.remove('show');
       }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Hamburger Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Multi-phrase Dynamic Typing Effect
+    const phrases = [
+      "NSD Computer Institute",
+      "Industry Certified Programs",
+      "Hands-on Lab Training",
+      "20+ Years of Mentorship",
+      "ISO 9001:2015 Standards"
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typedElement = document.getElementById('typedElement');
+
+    function typeLoop() {
+      const currentPhrase = phrases[phraseIndex];
+      if (isDeleting) {
+        typedElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typedElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let typingSpeed = isDeleting ? 40 : 80;
+
+      if (!isDeleting && charIndex === currentPhrase.length) {
+        typingSpeed = 1800; // Pause at end of phrase
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typingSpeed = 400; // Pause before typing next
+      }
+
+      setTimeout(typeLoop, typingSpeed);
     }
 
-    window.onload = function () {
-      typeEffect();
-    };
-  </script>
-
-  <script>
-    window.addEventListener("scroll", () => {
-      const header = document.querySelector(".main-header");
-      if (window.scrollY > 100) {
-        header.classList.add("shrink");
-      } else {
-        header.classList.remove("shrink");
-      }
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(typeLoop, 500);
     });
   </script>
-
-
-
 </body>
-
 </html>
-
-
-
-
