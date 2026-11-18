@@ -3,93 +3,468 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - Institute Website</title>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="about.css" />
-
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
+  <title>About Us | NSD Computer Institute</title>
+  <meta name="description" content="Learn about NSD Computer Institute, founded by Navdeep Singh Dadhwal with 20+ years of technical training expertise. Registered with MSME and ISO 9001:2015 certified." />
+  
+  <link rel="icon" type="image/png" href="logo.png" />
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- About Page Stylesheet -->
+  <link rel="stylesheet" href="about.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header data-aos="fade-down" data-aos-duration="1000">
-    <div class="logo">
-      <img src="logo.png" alt="Institute Logo">
-      <h1>NSD Computer Institute</h1>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-badges">
+        <span class="top-badge-item">
+          <i class="fa-solid fa-award"></i>
+          <strong>ISO 9001:2015 Certified</strong> (INQ/PUN-7300/0821)
+        </span>
+        <span class="top-badge-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <strong>MSME Registered</strong> (UDYAM-PB-20-0014412)
+        </span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+919646004180"><i class="fa-solid fa-phone"></i> +91 9646004180</a>
+        <a href="mailto:navdeeprgniyd@gmail.com"><i class="fa-solid fa-envelope"></i> navdeeprgniyd@gmail.com</a>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="certificate.html">Certificate</a></li>
-      </ul>
-    </nav>
+  </div>
+
+  <!-- Main Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="NSD Computer Institute Home">
+        <img src="logo.png" alt="NSD Computer Institute Logo" />
+        <div class="logo-text">
+          <h1>NSD <span>Institute</span></h1>
+          <p>Centre of Excellence in IT</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="courses.html">Courses Offered</a></li>
+          <li><a href="certificate.html">Certificate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-cta">
+          <i class="fa-solid fa-user-graduate"></i>
+          <span>Enroll Now</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <div class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
-    <h1 data-aos="fade-up">About Me</h1>
-    <div class="about-content" data-aos="fade-right" data-aos-delay="200">
-      <div class="about-image">
-        <img src="navdeep.jpg" alt="Navdeep Singh Dadhwal">
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>About Us</span>
       </div>
-      <div>
-        <p>Myself, Navdeep Singh Dadhwal working as a Centre Manager at a Multinational Education-based company.</p>
-        <p>I have 20+ years of rich experience in conducting Govt. recognized Computer Trainings and 13 Years Mathematics coaching to 6th to 10th Standards.</p>
-        <p>I have worked in International Organization Commonwealth as ICT Officer and as a Senior Computer Faculty at Government Organization RGNIYD Regional Centre.</p>
+      <h1>Dedicated to Shaping Technical Futures</h1>
+      <p>
+        Over two decades of leadership in vocational training, government skill initiatives, and empowering youth with career-defining technical competencies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Founder Spotlight Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="director-spotlight-card">
+        <div class="director-img-container">
+          <div class="director-avatar-box">
+            <img src="navdeep.jpg" alt="Navdeep Singh Dadhwal - Managing Director" />
+          </div>
+          <div class="director-tagline">Navdeep Singh Dadhwal</div>
+          <div class="director-sub">Founder & Managing Director</div>
+          <div class="director-exp-chip">
+            <i class="fa-solid fa-award"></i> 20+ Years Educational Leadership
+          </div>
+        </div>
+
+        <div class="director-content">
+          <span class="section-tag">Director's Profile</span>
+          <h2>A Veteran Educator & Skill Development Specialist</h2>
+          <p>
+            I am Navdeep Singh Dadhwal, currently working as a Centre Manager at a Multinational Education-based company, and the Founder-Director of NSD Computer Institute. With over 20+ years of rich experience in conducting Government-recognized computer trainings and 13 years of specialized mathematics coaching for students from 6th to 10th standards, my mission has always been to make premier education reachable to every ambitious individual.
+          </p>
+          <p>
+            Over the span of my career, I have served in prestigious international and national bodies, notably as an <strong>ICT Officer with the Commonwealth (International Organization)</strong> and as a <strong>Senior Computer Faculty at the Rajiv Gandhi National Institute of Youth Development (RGNIYD Regional Centre)</strong>. Through government skill initiatives like PMKVY and non-PMKVY schemes with NSDC and Sector Skill Councils (IT, Telecom, Tourism & Hospitality, Healthcare), I have personally trained over <strong>4,000+ students</strong> who now contribute dynamically to the modern workforce.
+          </p>
+
+          <div class="achievements-list">
+            <div class="achievement-box">
+              <i class="fa-solid fa-globe"></i>
+              <div>
+                <strong>Commonwealth ICT Officer</strong>
+                <span>International organizational experience</span>
+              </div>
+            </div>
+            <div class="achievement-box">
+              <i class="fa-solid fa-landmark"></i>
+              <div>
+                <strong>Senior Faculty, RGNIYD</strong>
+                <span>Govt. youth development institution</span>
+              </div>
+            </div>
+            <div class="achievement-box">
+              <i class="fa-solid fa-users-gear"></i>
+              <div>
+                <strong>4,000+ Youth Mentored</strong>
+                <span>Through NSDC & PMKVY initiatives</span>
+              </div>
+            </div>
+            <div class="achievement-box">
+              <i class="fa-solid fa-square-root-variable"></i>
+              <div>
+                <strong>13+ Years Math Coaching</strong>
+                <span>Classes 6th to 10th academic excellence</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <h1 data-aos="fade-up">About Institute</h1>
-    <div class="about-content" data-aos="fade-left" data-aos-delay="300">
-      <div class="about-image">
-        <img src="centre.jpg" alt="Institute Image">
-      </div>
-      <div>
-        <p>NSD Computer Institute is a fast growing organization in the field of industrial and vocational Skill
-          training. Since our establishment in 2021, we have been providing quality training to youth, up skill training
-          working youth, women to making them not just technically sound in their chosen field, but also employment
-          ready.
-          The Founder, Navdeep Singh Dadhwal have 20+ years of rich experience in Skill Training with NSDC and different
-          SSC for providing training in IT Sector, Tourism & Hospitality Sector, Telecom Sector, Healthcare Sector for
-          PMKVY /Non PMKVY Schemes
-          .
-          Since our inception, our primary focus has been to equip youth/students with top-notch training. This training
-          not only nurtures their technical skills but also prepares them holistically for the demands of the workforce. </p>
-      </div>
-    </div>
-
-    <h1 data-aos="fade-up">Our Mission</h1>
-    <div class="about-content" data-aos="fade-left" data-aos-delay="300">
-      
-      <div>
-        <p>We are dedicated to transforming lives through cutting-edge technical training, comprehensive soft skills development, and robust capacity building. Our unwavering mission is to empower individuals to seize their full potential and excel in the workforce, while enriching their lives with endless opportunities for growth and success.
+  <!-- Vision, Mission & Values -->
+  <section class="section-padding pillars-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Guiding Light</span>
+        <h2 class="section-title">Vision, Mission & Core Values</h2>
+        <p class="section-subtitle">
+          The foundational principles that drive every lecture, practical lab session, and student interaction at NSD.
         </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Vision -->
+        <div class="pillar-card vision">
+          <div class="pillar-icon">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            We envision a future where excellence knows no bounds. We aspire to be the catalysts of change, shaping a tomorrow where individuals are equipped with the skills, knowledge, and mindset to conquer challenges and embrace limitless possibilities. Our vision is a world where every person can realize their true potential and contribute to building a brighter, more prosperous future for all.
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="pillar-card mission">
+          <div class="pillar-icon">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            We are dedicated to transforming lives through cutting-edge technical training, comprehensive soft skills development, and robust capacity building. Our unwavering mission is to empower individuals to seize their full potential and excel in the workforce, while enriching their lives with endless opportunities for growth, financial independence, and success.
+          </p>
+        </div>
+
+        <!-- Core Values -->
+        <div class="pillar-card values">
+          <div class="pillar-icon">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3>Core Values</h3>
+          <p>
+            Integrity, accessibility, hands-on rigor, and relentless student support define our institution. We reject passive rote learning in favor of real workstation practice, ensuring that every concept taught directly enhances employability, problem-solving confidence, and career resilience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Institute Milestone Timeline -->
+  <section class="section-padding timeline-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Journey</span>
+        <h2 class="section-title">Two Decades of Impact & Evolution</h2>
+        <p class="section-subtitle">
+          From grassroots vocational coaching to an ISO 9001:2015 certified technical landmark.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2004 - 2012</div>
+            <h4>Leadership in ICT & Youth Training</h4>
+            <p>
+              Navdeep Singh Dadhwal served with Commonwealth International Organization and Rajiv Gandhi National Institute of Youth Development (RGNIYD), pioneering computer literacy curricula.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2013 - 2020</div>
+            <h4>NSDC & National Skill Schemes</h4>
+            <p>
+              Trained thousands of young men and women under PMKVY and Sector Skill Councils across IT, Telecom, Tourism, and Healthcare sectors, preparing them directly for industry hiring.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2021</div>
+            <h4>Foundation of NSD Computer Institute</h4>
+            <p>
+              Established a dedicated training centre campus with modern workstation labs, registered under MSME, Govt. of India (UDYAM-PB-20-0014412) and ISO 9001:2015 certified.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2024 - Present</div>
+            <h4>4,000+ Alumni & Modern Curriculum</h4>
+            <p>
+              Expanded offerings to Python programming, modern Full-Stack Web Development, Tally Prime with GST, and specialized semester Industrial Training for BCA and B.Tech engineering students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus & Lab Facilities -->
+  <section class="section-padding infrastructure-section">
+    <div class="container">
+      <div class="infra-grid">
+        <div class="infra-desc">
+          <span class="section-tag">Campus Infrastructure</span>
+          <h3>Modern Labs Built For 100% Practical Fluency</h3>
+          <p>
+            At NSD Computer Institute, theory is always paired with hands-on computer execution. Our computer lab offers an immersive environment where students spend hours writing code, designing graphics, balancing accounts, and troubleshooting software.
+          </p>
+          <ul class="infra-features">
+            <li><i class="fa-solid fa-circle-check"></i> High-spec individual computer workstations for every enrolled student</li>
+            <li><i class="fa-solid fa-circle-check"></i> Genuine licensed professional development and design software suites</li>
+            <li><i class="fa-solid fa-circle-check"></i> High-speed optical fiber connectivity for web and cloud projects</li>
+            <li><i class="fa-solid fa-circle-check"></i> Continuous power backup (Inverter/UPS) ensuring zero class disruptions</li>
+            <li><i class="fa-solid fa-circle-check"></i> Air-conditioned, distraction-free environment for concentrated study</li>
+          </ul>
+        </div>
+
+        <div class="infra-gallery">
+          <div class="infra-card">
+            <img src="centre.jpg" alt="NSD Computer Lab Classrooms" />
+            <div class="infra-card-title">Computer Lab & Workstations</div>
+          </div>
+          <div class="infra-card">
+            <img src="institute.jpg" alt="NSD Institute Frontage" />
+            <div class="infra-card-title">Main Campus Entrance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Accreditations & Certifications -->
+  <section class="section-padding accreditations-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quality Assured</span>
+        <h2 class="section-title">Government Recognized & ISO Certified</h2>
+        <p class="section-subtitle">
+          Our standards comply with rigorous national and international benchmarks.
+        </p>
+      </div>
+
+      <div class="accreditations-grid">
+        <div class="accred-card">
+          <div class="accred-icon">
+            <i class="fa-solid fa-stamp"></i>
+          </div>
+          <div class="accred-details">
+            <h4>ISO 9001:2015 Quality Management</h4>
+            <div class="accred-reg-number">Certificate: INQ/PUN-7300/0821</div>
+            <p>
+              Audited and certified for maintaining international excellence in vocational computer training, curriculum structure, student assessment, and laboratory safety standards.
+            </p>
+          </div>
+        </div>
+
+        <div class="accred-card">
+          <div class="accred-icon">
+            <i class="fa-solid fa-landmark"></i>
+          </div>
+          <div class="accred-details">
+            <h4>Registered Under Ministry of MSME</h4>
+            <div class="accred-reg-number">Udyam: UDYAM-PB-20-0014412</div>
+            <p>
+              Officially recognized and registered under the Ministry of Micro, Small & Medium Enterprises, Government of India, endorsing our commitment to community skill empowerment.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2021 NSD Institute</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="logo.png" alt="NSD Logo" />
+            <div class="logo-text">
+              <h1>NSD <span>Institute</span></h1>
+              <p>Centre of Excellence in IT</p>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            NSD Computer Institute is a fast-growing educational organization dedicated to vocational and industrial technical training, nurturing future-ready professionals since 2021.
+          </p>
+          <div class="footer-accreditation-chips">
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-stamp"></i>
+              <span>ISO 9001:2015 Certified (INQ/PUN-7300/0821)</span>
+            </div>
+            <div class="accreditation-chip">
+              <i class="fa-solid fa-landmark"></i>
+              <span>Govt. MSME Reg. (UDYAM-PB-20-0014412)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Our Institute</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> All Courses & Fees</a></li>
+            <li><a href="certificate.html"><i class="fa-solid fa-angle-right"></i> Verify Certificate</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Courses</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Web Designing (5 Months)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Python Programming</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> ADCA Diploma (1 Year)</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Tally Prime with GST</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Graphic Designing</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-angle-right"></i> Industrial Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Helpline</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone Support:</strong><br />
+                <a href="tel:+919646004180">+91 9646004180</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email Address:</strong><br />
+                <a href="mailto:navdeeprgniyd@gmail.com">navdeeprgniyd@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Centre Timings:</strong><br />
+                Mon - Sat: 8:00 AM - 7:30 PM<br />
+                Sunday: By Prior Appointment
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2021 - 2026 NSD Computer Institute. All Rights Reserved.</p>
+        <p>ISO 9001:2015 & MSME Certified Vocational Training Centre.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- AOS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Floating Utilities -->
+  <a href="https://wa.me/9646004180?text=Hello%20NSD%20Computer%20Institute!%20I%20am%20interested%20in%20taking%20admission." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-back-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
   <script>
-    AOS.init({
-      duration: 1200,
-      once: true,
-      offset: 100,
+    const header = document.getElementById('header');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+        backToTop.classList.add('show');
+      } else {
+        header.classList.remove('scrolled');
+        backToTop.classList.remove('show');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
     });
   </script>
 </body>
 </html>
-
